@@ -1,0 +1,8 @@
+2020-08-13 00:01:00.799  INFO [book-service-app,,,] 11561 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-13 00:06:00.856  INFO [book-service-app,,,] 11561 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-13 00:11:00.860  INFO [book-service-app,,,] 11561 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-13 00:24:42.625  WARN [book-service-app,,,] 11561 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12m43s470ms).
+2020-08-13 00:28:14.319  INFO [book-service-app,,,] 11561 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-13 00:33:14.327  INFO [book-service-app,,,] 11561 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-13 00:38:14.337  INFO [book-service-app,,,] 11561 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-13 00:43:14.344  INFO [book-service-app,,,] 11561 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

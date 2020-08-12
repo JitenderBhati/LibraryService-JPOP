@@ -1,0 +1,9 @@
+2020-08-13 00:00:57.985  INFO [user-service-app,,,] 11559 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-13 00:05:58.039  INFO [user-service-app,,,] 11559 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-13 00:10:58.047  INFO [user-service-app,,,] 11559 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-13 00:17:06.747  WARN [user-service-app,,,] 11559 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m13s268ms).
+2020-08-13 00:25:06.953  WARN [user-service-app,,,] 11559 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m207ms).
+2020-08-13 00:28:11.508  INFO [user-service-app,,,] 11559 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-13 00:33:11.520  INFO [user-service-app,,,] 11559 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-13 00:38:11.532  INFO [user-service-app,,,] 11559 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-13 00:43:11.539  INFO [user-service-app,,,] 11559 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

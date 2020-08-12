@@ -1,0 +1,12 @@
+2020-08-13 00:04:45.963  INFO [library-service-app,,,] 11535 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-13 00:09:46.026  INFO [library-service-app,,,] 11535 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-13 00:16:58.956  WARN [library-service-app,,,] 11535 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m13s277ms).
+2020-08-13 00:17:00.468  INFO [library-service-app,,,] 11535 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_LIBRARY-SERVICE-APP/192.168.0.4:library-service-app:8802 - Re-registering apps/LIBRARY-SERVICE-APP
+2020-08-13 00:17:00.469  INFO [library-service-app,,,] 11535 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_LIBRARY-SERVICE-APP/192.168.0.4:library-service-app:8802: registering service...
+2020-08-13 00:17:00.496  INFO [library-service-app,,,] 11535 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_LIBRARY-SERVICE-APP/192.168.0.4:library-service-app:8802 - registration status: 204
+2020-08-13 00:24:59.153  WARN [library-service-app,,,] 11535 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m199ms).
+2020-08-13 00:26:59.487  INFO [library-service-app,,,] 11535 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-13 00:31:59.493  INFO [library-service-app,,,] 11535 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-13 00:36:59.498  INFO [library-service-app,,,] 11535 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-13 00:41:59.498  INFO [library-service-app,,,] 11535 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-13 00:46:59.502  INFO [library-service-app,,,] 11535 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
