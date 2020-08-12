@@ -28,33 +28,39 @@ public class UserController {
 
     @GetMapping
     public ResponseEntity<List<UserDto>> getUsers() {
+        log.info("GET Method -> Invoked /api/v1/user endpoint");
         List<UserDto> allUsers = this.userService.getAllUsers();
         return ResponseEntity.status((allUsers.size() > 0) ? HttpStatus.OK : HttpStatus.NO_CONTENT).body(allUsers);
     }
 
     @GetMapping("{id}")
     public ResponseEntity<UserDto> getUser(@PathVariable("id") final Long id) {
+        log.info("GET Method -> Invoked /api/v1/user/{} endpoint", id);
+
         try {
             return ResponseEntity.status(HttpStatus.OK).body(this.userService.getUser(id));
         } catch (IllegalAccessException e) {
+            log.error("GET Method -> Invoked /api/v1/user endpoint with exception: {}", e);
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(null);
         }
     }
 
     @PostMapping
     public ResponseEntity<UserDto> addUser(@Valid @NotNull @RequestBody final UserDto user) {
-        log.error("User Controller object: {}", user);
+        log.info("POST Method -> Invoked /api/v1/user endpoint with paramters: {}", user);
         return ResponseEntity.status(HttpStatus.CREATED).body(this.userService.addUser(user));
     }
 
     @PutMapping("{id}")
     public ResponseEntity<UserDto> updateUser(@RequestBody @Valid @NotNull final UserDto user,
                                               @PathVariable("id") final Long id) {
+        log.info("PUT Method -> Invoked /api/v1/user/{} endpoint with paramater: {}", id, user);
         return ResponseEntity.status(HttpStatus.OK).body(this.userService.updateUser(id, user));
     }
 
     @DeleteMapping("{id}")
     public ResponseEntity<String> deleteUser(@PathVariable("id") final Long id) {
+        log.info("DELETE Method -> Invoked /api/v1/user/{} endpoint", id);
         return ResponseEntity.status(HttpStatus.OK).body("User Deleted Successfully");
     }
 }

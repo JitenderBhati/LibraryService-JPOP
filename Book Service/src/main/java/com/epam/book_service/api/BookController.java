@@ -3,19 +3,21 @@ package com.epam.book_service.api;
 import com.epam.book_service.dto.BookDto;
 import com.epam.book_service.model.Book;
 import com.epam.book_service.service.BookService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
-import javax.validation.constraints.NotNull;
 import java.util.List;
 
 @RestController
 @RequestMapping("api/v1/books")
 public class BookController {
     private final BookService bookService;
+    private final Logger log = LoggerFactory.getLogger(this.getClass());
 
     @Autowired
     public BookController(final BookService bookService) {
@@ -24,6 +26,7 @@ public class BookController {
 
     @GetMapping
     public ResponseEntity<List<Book>> getAllBooks() {
+        log.info("Invoked /api/v1/books endpoint");
         var listOfBooks = this.bookService.getBooks();
         return ResponseEntity
                 .status(listOfBooks.isEmpty() ? HttpStatus.NO_CONTENT : HttpStatus.OK)
@@ -32,11 +35,13 @@ public class BookController {
 
     @GetMapping("{bookId}")
     public ResponseEntity<Book> getBook(@PathVariable("bookId") final Long bookId) {
+        log.info("Invoked /api/v1/books/{} endpoint", bookId);
         return ResponseEntity.status(HttpStatus.OK).body(this.bookService.getBook(bookId));
     }
 
     @PostMapping
     public ResponseEntity<String> addBook(@Valid @RequestBody final BookDto book) {
+        log.info("Invoked /api/v1/books endpoint with parameter: {}", book);
         this.bookService.addBook(book);
         return ResponseEntity
                 .status(HttpStatus.CREATED)
@@ -45,6 +50,7 @@ public class BookController {
 
     @DeleteMapping("{bookId}")
     public ResponseEntity<String> deleteBook(@PathVariable("bookId") final Long bookId) {
+        log.info("Invoked /api/v1/books/{} endpoint", bookId);
         this.bookService.deleteBook(bookId);
         return ResponseEntity.status(HttpStatus.OK).body("Book Deleted Successfully");
     }
@@ -52,6 +58,7 @@ public class BookController {
     @PutMapping("{bookId}")
     public ResponseEntity<Book> updateBook(@PathVariable("bookId") final Long id,
                                            @Valid @RequestBody final BookDto book) {
+        log.info("Invoked /api/v1/books/{} endpoint with parameter: {}", id, book);
         return ResponseEntity.status(HttpStatus.OK).body(this.bookService.updateBook(id, book));
     }
 }

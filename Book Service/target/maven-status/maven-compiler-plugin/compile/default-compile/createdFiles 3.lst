@@ -1,0 +1,11 @@
+com/epam/book_service/ServletInitializer.class
+com/epam/book_service/exception/BookNotFound.class
+com/epam/book_service/model/Author.class
+com/epam/book_service/config/Swagger2Config.class
+com/epam/book_service/api/BookController.class
+com/epam/book_service/service/BookService.class
+com/epam/book_service/dto/BookDto.class
+com/epam/book_service/dto/AuthorDto.class
+com/epam/book_service/model/Book.class
+com/epam/book_service/BookServiceApplication.class
+com/epam/book_service/repository/BookDataService.class
