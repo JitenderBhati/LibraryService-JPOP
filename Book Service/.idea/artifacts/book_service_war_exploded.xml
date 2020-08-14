@@ -62,7 +62,6 @@
           <element id="library" level="project" name="Maven: org.glassfish:jakarta.el:3.0.3" />
           <element id="library" level="project" name="Maven: org.liquibase:liquibase-maven-plugin:3.10.1" />
           <element id="library" level="project" name="Maven: javax.xml.bind:jaxb-api:2.3.1" />
-          <element id="library" level="project" name="Maven: javax.activation:javax.activation-api:1.2.0" />
           <element id="library" level="project" name="Maven: org.apache.maven:maven-plugin-api:3.3.9" />
           <element id="library" level="project" name="Maven: org.apache.maven:maven-model:3.3.9" />
           <element id="library" level="project" name="Maven: org.eclipse.sisu:org.eclipse.sisu.plexus:0.3.2" />
@@ -96,6 +95,32 @@
           <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.30" />
           <element id="library" level="project" name="Maven: ch.qos.logback:logback-classic:1.2.3" />
           <element id="library" level="project" name="Maven: ch.qos.logback:logback-core:1.2.3" />
+          <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-starter-oauth2:2.2.2.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.security.oauth.boot:spring-security-oauth2-autoconfigure:2.1.2.RELEASE" />
+          <element id="library" level="project" name="Maven: com.sun.xml.bind:jaxb-core:2.3.0.1" />
+          <element id="library" level="project" name="Maven: com.sun.xml.bind:jaxb-impl:2.3.0.1" />
+          <element id="library" level="project" name="Maven: org.springframework.security.oauth:spring-security-oauth2:2.3.4.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-core:5.3.3.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-config:5.3.3.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-web:5.3.3.RELEASE" />
+          <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.14" />
+          <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-mapper-asl:1.9.13" />
+          <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-core-asl:1.9.13" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-jwt:1.0.9.RELEASE" />
+          <element id="library" level="project" name="Maven: org.bouncycastle:bcpkix-jdk15on:1.56" />
+          <element id="library" level="project" name="Maven: org.bouncycastle:bcprov-jdk15on:1.56" />
+          <element id="library" level="project" name="Maven: javax.activation:javax.activation-api:1.2.0" />
+          <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-starter-security:2.2.2.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-starter:2.2.3.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-rsa:1.0.9.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-actuator:2.3.1.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-actuator-autoconfigure:2.3.1.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-actuator:2.3.1.RELEASE" />
+          <element id="library" level="project" name="Maven: io.micrometer:micrometer-core:1.5.1" />
+          <element id="library" level="project" name="Maven: org.hdrhistogram:HdrHistogram:2.1.12" />
+          <element id="library" level="project" name="Maven: org.latencyutils:LatencyUtils:2.0.3" />
+          <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-security:2.2.2.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-security:2.3.1.RELEASE" />
           <element id="library" level="project" name="Maven: jakarta.xml.bind:jakarta.xml.bind-api:2.3.3" />
           <element id="library" level="project" name="Maven: jakarta.activation:jakarta.activation-api:1.2.2" />
           <element id="library" level="project" name="Maven: org.springframework:spring-core:5.2.7.RELEASE" />
@@ -126,10 +151,6 @@
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.11.0" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.11.0" />
           <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:2.2.3.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-starter:2.2.3.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-rsa:1.0.9.RELEASE" />
-          <element id="library" level="project" name="Maven: org.bouncycastle:bcpkix-jdk15on:1.64" />
-          <element id="library" level="project" name="Maven: org.bouncycastle:bcprov-jdk15on:1.64" />
           <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-netflix-hystrix:2.2.3.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-netflix-eureka-client:2.2.3.RELEASE" />
           <element id="library" level="project" name="Maven: com.netflix.eureka:eureka-client:1.9.21" />
@@ -151,7 +172,6 @@
           <element id="library" level="project" name="Maven: com.sun.jersey.contribs:jersey-apache-client4:1.19.1" />
           <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpclient:4.5.12" />
           <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpcore:4.4.13" />
-          <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.14" />
           <element id="library" level="project" name="Maven: commons-configuration:commons-configuration:1.10" />
           <element id="library" level="project" name="Maven: commons-lang:commons-lang:2.6" />
           <element id="library" level="project" name="Maven: com.google.inject:guice:4.1.0" />

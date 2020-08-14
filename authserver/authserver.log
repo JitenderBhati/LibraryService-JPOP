@@ -4356,3 +4356,22 @@ Caused by: java.io.FileNotFoundException: class path resource [db/changelog/crea
 2020-08-14 19:32:33.372  INFO [Authorization Server,,,] 11569 --- [http-nio-8383-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-08-14 19:32:33.389  INFO [Authorization Server,,,] 11569 --- [http-nio-8383-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
 2020-08-14 19:32:34.818  INFO [Authorization Server,01ac41e959627ab3,01ac41e959627ab3,true] 11569 --- [http-nio-8383-exec-1] o.s.s.o.p.token.store.JdbcTokenStore     : Failed to find access token for token 62ee378a-46c6-47c9-bc71-559f8a7bba06
+2020-08-14 19:37:02.159  INFO [Authorization Server,,,] 11569 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-14 19:42:02.170  INFO [Authorization Server,,,] 11569 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-14 19:47:02.165  INFO [Authorization Server,,,] 11569 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-14 19:52:02.173  INFO [Authorization Server,,,] 11569 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-14 19:57:02.182  INFO [Authorization Server,,,] 11569 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-14 20:02:57.823  WARN [Authorization Server,,,] 11569 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m59s831ms).
+2020-08-14 20:03:31.999  INFO [Authorization Server,,,] 11569 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-14 20:08:32.008  INFO [Authorization Server,,,] 11569 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-14 20:13:32.017  INFO [Authorization Server,,,] 11569 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-14 20:18:32.025  INFO [Authorization Server,,,] 11569 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-14 20:23:32.033  INFO [Authorization Server,,,] 11569 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-14 20:28:32.038  INFO [Authorization Server,,,] 11569 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-14 20:33:32.052  INFO [Authorization Server,,,] 11569 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-14 20:38:00.986  INFO [Authorization Server,1c858ebb04a7c354,1c858ebb04a7c354,true] 11569 --- [http-nio-8383-exec-9] o.s.s.o.p.endpoint.CheckTokenEndpoint    : Handling error: InvalidTokenException, Token has expired
+2020-08-14 20:38:12.485  INFO [Authorization Server,b9163ba707b053ca,b9163ba707b053ca,true] 11569 --- [http-nio-8383-exec-10] o.s.s.o.p.endpoint.CheckTokenEndpoint    : Handling error: InvalidTokenException, Token has expired
+2020-08-14 20:38:27.372  INFO [Authorization Server,1b146e5b0d541409,1b146e5b0d541409,true] 11569 --- [http-nio-8383-exec-2] o.s.s.o.p.endpoint.CheckTokenEndpoint    : Handling error: InvalidTokenException, Token has expired
+2020-08-14 20:38:32.060  INFO [Authorization Server,,,] 11569 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-14 20:38:38.382  INFO [Authorization Server,fb5118bf5ba2652c,fb5118bf5ba2652c,true] 11569 --- [http-nio-8383-exec-1] o.s.s.o.p.endpoint.CheckTokenEndpoint    : Handling error: InvalidTokenException, Token has expired
+2020-08-14 20:38:50.184  INFO [Authorization Server,533e742426336102,533e742426336102,true] 11569 --- [http-nio-8383-exec-4] o.s.s.o.p.token.store.JdbcTokenStore     : Failed to find access token for token ca70e83d-a858-4b97-9e03-2feb6cf9f41f
