@@ -2227,3 +2227,260 @@ Using generated security password: 082c41e0-7c96-4c10-9533-0e01ec6560de
 2020-08-14 20:28:08.771  INFO [book-service-app,,,] 12713 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2020-08-14 20:33:08.782  INFO [book-service-app,,,] 12713 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2020-08-14 20:38:08.791  INFO [book-service-app,,,] 12713 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-14 20:43:08.797  INFO [book-service-app,,,] 12713 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-14 20:49:44.590  WARN [book-service-app,,,] 12713 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m40s752ms).
+2020-08-14 20:52:19.547  INFO [book-service-app,,,] 12713 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-14 20:57:19.552  INFO [book-service-app,,,] 12713 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-14 21:02:19.561  INFO [book-service-app,,,] 12713 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-14 21:07:19.563  INFO [book-service-app,,,] 12713 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-14 21:12:19.571  INFO [book-service-app,,,] 12713 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-14 21:17:19.578  INFO [book-service-app,,,] 12713 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-14 21:20:57.061  INFO [book-service-app,,,] 12713 --- [SpringContextShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application BOOK-SERVICE-APP with eureka with status DOWN
+2020-08-14 21:20:57.065  WARN [book-service-app,,,] 12713 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1597420257063, current=DOWN, previous=UP]
+2020-08-14 21:20:57.066  INFO [book-service-app,,,] 12713 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BOOK-SERVICE-APP/192.168.0.4:book-service-app: registering service...
+2020-08-14 21:20:57.095  INFO [book-service-app,,,] 12713 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BOOK-SERVICE-APP/192.168.0.4:book-service-app - registration status: 204
+2020-08-14 21:20:57.485  INFO [book-service-app,,,] 12713 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-14 21:20:57.554  INFO [book-service-app,,,] 12713 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-14 21:20:57.556  INFO [book-service-app,,,] 12713 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-14 21:20:57.590  INFO [book-service-app,,,] 12713 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-14 21:20:58.401  INFO [book-service-app,,,] 12713 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2020-08-14 21:21:01.408  INFO [book-service-app,,,] 12713 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2020-08-14 21:21:01.417  INFO [book-service-app,,,] 12713 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BOOK-SERVICE-APP/192.168.0.4:book-service-app - deregister  status: 200
+2020-08-14 21:21:01.440  INFO [book-service-app,,,] 12713 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2020-08-14 21:21:15.964  INFO [book-service-app,,,] 13443 --- [main] c.e.book_service.BookServiceApplication  : No active profile set, falling back to default profiles: default
+2020-08-14 21:21:17.131  INFO [book-service-app,,,] 13443 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-14 21:21:17.205  INFO [book-service-app,,,] 13443 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66ms. Found 1 JPA repository interfaces.
+2020-08-14 21:21:17.326  WARN [book-service-app,,,] 13443 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-08-14 21:21:17.577  INFO [book-service-app,,,] 13443 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ba4b8b14-a582-3eda-bd74-1e79c925fb8d
+2020-08-14 21:21:18.158  INFO [book-service-app,,,] 13443 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-08-14 21:21:18.165  INFO [book-service-app,,,] 13443 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-14 21:21:18.166  INFO [book-service-app,,,] 13443 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-08-14 21:21:18.309  INFO [book-service-app,,,] 13443 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-14 21:21:18.310  INFO [book-service-app,,,] 13443 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2331 ms
+2020-08-14 21:21:18.461  WARN [book-service-app,,,] 13443 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-08-14 21:21:18.461  INFO [book-service-app,,,] 13443 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-14 21:21:18.466  INFO [book-service-app,,,] 13443 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@186dcb05
+2020-08-14 21:21:19.035  INFO [book-service-app,,,] 13443 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-14 21:21:19.353  INFO [book-service-app,,,] 13443 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-14 21:21:19.686  INFO [book-service-app,,,] 13443 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2020-08-14 21:21:20.122  INFO [book-service-app,,,] 13443 --- [main] liquibase.changelog                      : Reading from BookService.DATABASECHANGELOG
+2020-08-14 21:21:20.152  INFO [book-service-app,,,] 13443 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2020-08-14 21:21:20.227  INFO [book-service-app,,,] 13443 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-14 21:21:20.282  INFO [book-service-app,,,] 13443 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-14 21:21:20.328  INFO [book-service-app,,,] 13443 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-08-14 21:21:20.453  INFO [book-service-app,,,] 13443 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-14 21:21:20.561  INFO [book-service-app,,,] 13443 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-08-14 21:21:20.647  WARN [book-service-app,,,] 13443 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-14 21:21:21.046  INFO [book-service-app,,,] 13443 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-14 21:21:21.056  INFO [book-service-app,,,] 13443 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-14 21:21:21.071  INFO [book-service-app,,,] 13443 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-14 21:21:21.183  INFO [book-service-app,,,] 13443 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-08-14 21:21:21.275  WARN [book-service-app,,,] 13443 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-08-14 21:21:21.275  INFO [book-service-app,,,] 13443 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-14 21:21:21.911  INFO [book-service-app,,,] 13443 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: cb76bbe0-2eb0-4745-b107-1820b380d449
+
+2020-08-14 21:21:22.140  INFO [book-service-app,,,] 13443 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@11734d3d, org.springframework.security.web.context.SecurityContextPersistenceFilter@687dc7e6, org.springframework.security.web.header.HeaderWriterFilter@7f09b3aa, org.springframework.security.web.authentication.logout.LogoutFilter@6e26d0b3, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@64cc5f34, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@29957fe0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5cfc283d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@541e8e40, org.springframework.security.web.session.SessionManagementFilter@51e0629a, org.springframework.security.web.access.ExceptionTranslationFilter@5126c400, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5a52b5f8]
+2020-08-14 21:21:22.279  WARN [book-service-app,,,] 13443 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-08-14 21:21:22.468  WARN [book-service-app,,,] 13443 --- [main] s.o.SpringCloudSecurityAutoConfiguration : All Spring Cloud Security modules and starters are deprecated. They will be moved to individual projects in the next major release.
+2020-08-14 21:21:22.670  INFO [book-service-app,,,] 13443 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-08-14 21:21:22.701  INFO [book-service-app,,,] 13443 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-08-14 21:21:22.775  INFO [book-service-app,,,] 13443 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-08-14 21:21:22.776  INFO [book-service-app,,,] 13443 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-08-14 21:21:22.920  INFO [book-service-app,,,] 13443 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-08-14 21:21:22.920  INFO [book-service-app,,,] 13443 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-08-14 21:21:23.071  INFO [book-service-app,,,] 13443 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-14 21:21:23.091  INFO [book-service-app,,,] 13443 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-08-14 21:21:23.091  INFO [book-service-app,,,] 13443 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-08-14 21:21:23.091  INFO [book-service-app,,,] 13443 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-08-14 21:21:23.091  INFO [book-service-app,,,] 13443 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-08-14 21:21:23.091  INFO [book-service-app,,,] 13443 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-08-14 21:21:23.091  INFO [book-service-app,,,] 13443 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-08-14 21:21:23.092  INFO [book-service-app,,,] 13443 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-08-14 21:21:23.229  INFO [book-service-app,,,] 13443 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-08-14 21:21:23.234  INFO [book-service-app,,,] 13443 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-08-14 21:21:23.237  INFO [book-service-app,,,] 13443 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-08-14 21:21:23.240  INFO [book-service-app,,,] 13443 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1597420283240 with initial instances count: 4
+2020-08-14 21:21:23.250  INFO [book-service-app,,,] 13443 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application BOOK-SERVICE-APP with eureka with status UP
+2020-08-14 21:21:23.250  INFO [book-service-app,,,] 13443 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1597420283250, current=UP, previous=STARTING]
+2020-08-14 21:21:23.252  INFO [book-service-app,,,] 13443 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BOOK-SERVICE-APP/192.168.0.4:book-service-app: registering service...
+2020-08-14 21:21:23.278  INFO [book-service-app,,,] 13443 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-08-14 21:21:23.279  INFO [book-service-app,,,] 13443 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
+2020-08-14 21:21:23.283  INFO [book-service-app,,,] 13443 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-08-14 21:21:23.286  INFO [book-service-app,,,] 13443 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BOOK-SERVICE-APP/192.168.0.4:book-service-app - registration status: 204
+2020-08-14 21:21:23.306  INFO [book-service-app,,,] 13443 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-08-14 21:21:23.345  INFO [book-service-app,,,] 13443 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-08-14 21:21:23.465  INFO [book-service-app,,,] 13443 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2020-08-14 21:21:23.467  INFO [book-service-app,,,] 13443 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2020-08-14 21:21:23.480  INFO [book-service-app,,,] 13443 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-08-14 21:21:23.703  INFO [book-service-app,,,] 13443 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-08-14 21:21:23.730  INFO [book-service-app,,,] 13443 --- [main] c.e.book_service.BookServiceApplication  : Started BookServiceApplication in 12.555 seconds (JVM running for 18.087)
+2020-08-14 21:26:23.100  INFO [book-service-app,,,] 13443 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-14 21:26:46.892  INFO [book-service-app,,,] 13443 --- [SpringContextShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application BOOK-SERVICE-APP with eureka with status DOWN
+2020-08-14 21:26:46.893  WARN [book-service-app,,,] 13443 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1597420606892, current=DOWN, previous=UP]
+2020-08-14 21:26:46.893  INFO [book-service-app,,,] 13443 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BOOK-SERVICE-APP/192.168.0.4:book-service-app: registering service...
+2020-08-14 21:26:46.901  INFO [book-service-app,,,] 13443 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BOOK-SERVICE-APP/192.168.0.4:book-service-app - registration status: 204
+2020-08-14 21:26:46.961  INFO [book-service-app,,,] 13443 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-14 21:26:46.966  INFO [book-service-app,,,] 13443 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-14 21:26:46.967  INFO [book-service-app,,,] 13443 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-14 21:26:46.995  INFO [book-service-app,,,] 13443 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-14 21:26:47.711  INFO [book-service-app,,,] 13443 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2020-08-14 21:26:50.718  INFO [book-service-app,,,] 13443 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2020-08-14 21:26:50.732  INFO [book-service-app,,,] 13443 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BOOK-SERVICE-APP/192.168.0.4:book-service-app - deregister  status: 200
+2020-08-14 21:26:50.767  INFO [book-service-app,,,] 13443 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2020-08-14 21:27:06.800  INFO [book-service-app,,,] 13700 --- [main] c.e.book_service.BookServiceApplication  : No active profile set, falling back to default profiles: default
+2020-08-14 21:27:08.918  INFO [book-service-app,,,] 13700 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-14 21:27:09.003  INFO [book-service-app,,,] 13700 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 75ms. Found 1 JPA repository interfaces.
+2020-08-14 21:27:09.153  WARN [book-service-app,,,] 13700 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-08-14 21:27:09.395  INFO [book-service-app,,,] 13700 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3ed26ddd-5a5a-31db-a50d-de073660694f
+2020-08-14 21:27:09.929  INFO [book-service-app,,,] 13700 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@25cde5bb' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-14 21:27:09.959  WARN [book-service-app,,,] 13700 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'objectMapperConfigurer' defined in class path resource [springfox/documentation/spring/web/SpringfoxWebMvcConfiguration.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'metaDataSourceAdvisor': Cannot resolve reference to bean 'methodSecurityMetadataSource' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'methodSecurityMetadataSource' defined in class path resource [org/springframework/security/config/annotation/method/configuration/GlobalMethodSecurityConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.access.method.MethodSecurityMetadataSource]: Factory method 'methodSecurityMetadataSource' threw exception; nested exception is java.lang.IllegalStateException: In the composition of all global method configuration, no annotation support was actually activated
+2020-08-14 21:27:10.009  INFO [book-service-app,,,] 13700 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-08-14 21:27:10.040 ERROR [book-service-app,,,] 13700 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'objectMapperConfigurer' defined in class path resource [springfox/documentation/spring/web/SpringfoxWebMvcConfiguration.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'metaDataSourceAdvisor': Cannot resolve reference to bean 'methodSecurityMetadataSource' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'methodSecurityMetadataSource' defined in class path resource [org/springframework/security/config/annotation/method/configuration/GlobalMethodSecurityConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.access.method.MethodSecurityMetadataSource]: Factory method 'methodSecurityMetadataSource' threw exception; nested exception is java.lang.IllegalStateException: In the composition of all global method configuration, no annotation support was actually activated
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:512) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:241) ~[spring-context-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:723) ~[spring-context-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:536) ~[spring-context-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) ~[spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) ~[spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) ~[spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) ~[spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at com.epam.book_service.BookServiceApplication.main(BookServiceApplication.java:18) ~[classes/:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'metaDataSourceAdvisor': Cannot resolve reference to bean 'methodSecurityMetadataSource' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'methodSecurityMetadataSource' defined in class path resource [org/springframework/security/config/annotation/method/configuration/GlobalMethodSecurityConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.access.method.MethodSecurityMetadataSource]: Factory method 'methodSecurityMetadataSource' threw exception; nested exception is java.lang.IllegalStateException: In the composition of all global method configuration, no annotation support was actually activated
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:342) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:690) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:196) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1358) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91) ~[spring-aop-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:111) ~[spring-aop-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:92) ~[spring-aop-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101) ~[spring-aop-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:251) ~[spring-aop-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1141) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1114) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:506) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	... 15 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'methodSecurityMetadataSource' defined in class path resource [org/springframework/security/config/annotation/method/configuration/GlobalMethodSecurityConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.access.method.MethodSecurityMetadataSource]: Factory method 'methodSecurityMetadataSource' threw exception; nested exception is java.lang.IllegalStateException: In the composition of all global method configuration, no annotation support was actually activated
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:483) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	... 34 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.access.method.MethodSecurityMetadataSource]: Factory method 'methodSecurityMetadataSource' threw exception; nested exception is java.lang.IllegalStateException: In the composition of all global method configuration, no annotation support was actually activated
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:650) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	... 44 common frames omitted
+Caused by: java.lang.IllegalStateException: In the composition of all global method configuration, no annotation support was actually activated
+	at org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration.methodSecurityMetadataSource(GlobalMethodSecurityConfiguration.java:373) ~[spring-security-config-5.3.3.RELEASE.jar:5.3.3.RELEASE]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	... 45 common frames omitted
+
+2020-08-14 21:30:46.045  INFO [book-service-app,,,] 13741 --- [main] c.e.book_service.BookServiceApplication  : No active profile set, falling back to default profiles: default
+2020-08-14 21:30:48.204  INFO [book-service-app,,,] 13741 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-14 21:30:48.298  INFO [book-service-app,,,] 13741 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 80ms. Found 1 JPA repository interfaces.
+2020-08-14 21:30:48.482  WARN [book-service-app,,,] 13741 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-08-14 21:30:49.075  INFO [book-service-app,,,] 13741 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3ed26ddd-5a5a-31db-a50d-de073660694f
+2020-08-14 21:30:49.491  INFO [book-service-app,,,] 13741 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@15186ce0' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-14 21:30:49.514  INFO [book-service-app,,,] 13741 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-14 21:30:50.032  INFO [book-service-app,,,] 13741 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-08-14 21:30:50.041  INFO [book-service-app,,,] 13741 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-14 21:30:50.041  INFO [book-service-app,,,] 13741 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-08-14 21:30:50.271  INFO [book-service-app,,,] 13741 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-14 21:30:50.272  INFO [book-service-app,,,] 13741 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4207 ms
+2020-08-14 21:30:50.501  WARN [book-service-app,,,] 13741 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-08-14 21:30:50.501  INFO [book-service-app,,,] 13741 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-14 21:30:50.509  INFO [book-service-app,,,] 13741 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@2aa0feb2
+2020-08-14 21:30:51.440  INFO [book-service-app,,,] 13741 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-14 21:30:51.977  INFO [book-service-app,,,] 13741 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-14 21:30:52.358  INFO [book-service-app,,,] 13741 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2020-08-14 21:30:53.087  INFO [book-service-app,,,] 13741 --- [main] liquibase.changelog                      : Reading from BookService.DATABASECHANGELOG
+2020-08-14 21:30:53.120  INFO [book-service-app,,,] 13741 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2020-08-14 21:30:53.265  INFO [book-service-app,,,] 13741 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-14 21:30:53.418  INFO [book-service-app,,,] 13741 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-14 21:30:53.483  INFO [book-service-app,,,] 13741 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2020-08-14 21:30:53.605  INFO [book-service-app,,,] 13741 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-14 21:30:53.741  INFO [book-service-app,,,] 13741 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-08-14 21:30:53.921  WARN [book-service-app,,,] 13741 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-14 21:30:54.526  INFO [book-service-app,,,] 13741 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-14 21:30:54.536  INFO [book-service-app,,,] 13741 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-14 21:30:54.777  INFO [book-service-app,,,] 13741 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-14 21:30:55.073  INFO [book-service-app,,,] 13741 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-08-14 21:30:55.226  WARN [book-service-app,,,] 13741 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-08-14 21:30:55.226  INFO [book-service-app,,,] 13741 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-14 21:30:56.364  INFO [book-service-app,,,] 13741 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 22a36256-7d62-45ad-8d43-71884fc4a23c
+
+2020-08-14 21:30:56.692  INFO [book-service-app,,,] 13741 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@452d9887, org.springframework.security.web.context.SecurityContextPersistenceFilter@2e7da886, org.springframework.security.web.header.HeaderWriterFilter@7231547f, org.springframework.security.web.authentication.logout.LogoutFilter@2040722f, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@cc65ea1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5bcc2416, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@16415241, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5aa16232, org.springframework.security.web.session.SessionManagementFilter@76466a5, org.springframework.security.web.access.ExceptionTranslationFilter@6ac4f76a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5c24a636]
+2020-08-14 21:30:56.833  WARN [book-service-app,,,] 13741 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-08-14 21:30:57.140  WARN [book-service-app,,,] 13741 --- [main] s.o.SpringCloudSecurityAutoConfiguration : All Spring Cloud Security modules and starters are deprecated. They will be moved to individual projects in the next major release.
+2020-08-14 21:30:57.345  INFO [book-service-app,,,] 13741 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-08-14 21:30:57.382  INFO [book-service-app,,,] 13741 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-08-14 21:30:57.450  INFO [book-service-app,,,] 13741 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-08-14 21:30:57.450  INFO [book-service-app,,,] 13741 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-08-14 21:30:57.584  INFO [book-service-app,,,] 13741 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-08-14 21:30:57.585  INFO [book-service-app,,,] 13741 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-08-14 21:30:57.940  INFO [book-service-app,,,] 13741 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-14 21:30:57.963  INFO [book-service-app,,,] 13741 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-08-14 21:30:57.964  INFO [book-service-app,,,] 13741 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-08-14 21:30:57.964  INFO [book-service-app,,,] 13741 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-08-14 21:30:57.964  INFO [book-service-app,,,] 13741 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-08-14 21:30:57.964  INFO [book-service-app,,,] 13741 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-08-14 21:30:57.964  INFO [book-service-app,,,] 13741 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-08-14 21:30:57.964  INFO [book-service-app,,,] 13741 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-08-14 21:30:58.098  INFO [book-service-app,,,] 13741 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-08-14 21:30:58.100  INFO [book-service-app,,,] 13741 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-08-14 21:30:58.102  INFO [book-service-app,,,] 13741 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-08-14 21:30:58.106  INFO [book-service-app,,,] 13741 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1597420858105 with initial instances count: 3
+2020-08-14 21:30:58.118  INFO [book-service-app,,,] 13741 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application BOOK-SERVICE-APP with eureka with status UP
+2020-08-14 21:30:58.119  INFO [book-service-app,,,] 13741 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1597420858119, current=UP, previous=STARTING]
+2020-08-14 21:30:58.121  INFO [book-service-app,,,] 13741 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BOOK-SERVICE-APP/192.168.0.4:book-service-app: registering service...
+2020-08-14 21:30:58.156  INFO [book-service-app,,,] 13741 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-08-14 21:30:58.158  INFO [book-service-app,,,] 13741 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
+2020-08-14 21:30:58.163  INFO [book-service-app,,,] 13741 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-08-14 21:30:58.170  INFO [book-service-app,,,] 13741 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BOOK-SERVICE-APP/192.168.0.4:book-service-app - registration status: 204
+2020-08-14 21:30:58.190  INFO [book-service-app,,,] 13741 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-08-14 21:30:58.254  INFO [book-service-app,,,] 13741 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-08-14 21:30:58.382  INFO [book-service-app,,,] 13741 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2020-08-14 21:30:58.384  INFO [book-service-app,,,] 13741 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2020-08-14 21:30:58.461  INFO [book-service-app,,,] 13741 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-08-14 21:30:58.907  INFO [book-service-app,,,] 13741 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-08-14 21:30:58.935  INFO [book-service-app,,,] 13741 --- [main] c.e.book_service.BookServiceApplication  : Started BookServiceApplication in 15.245 seconds (JVM running for 21.167)
+2020-08-14 21:31:37.592  INFO [book-service-app,,,] 13741 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-14 21:31:37.593  INFO [book-service-app,,,] 13741 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-14 21:31:37.618  INFO [book-service-app,,,] 13741 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 25 ms
+2020-08-14 21:32:43.019  INFO [book-service-app,d0b3fc362dbf568a,d0b3fc362dbf568a,true] 13741 --- [http-nio-8080-exec-4] c.epam.book_service.api.BookController   : Invoked /api/v1/books/1 endpoint
+2020-08-14 21:32:48.571  INFO [book-service-app,32d1d2999676c567,32d1d2999676c567,true] 13741 --- [http-nio-8080-exec-5] c.epam.book_service.api.BookController   : Invoked /api/v1/books/2 endpoint
+2020-08-14 21:33:18.969  INFO [book-service-app,48223444a122b2e2,48223444a122b2e2,true] 13741 --- [http-nio-8080-exec-6] c.epam.book_service.api.BookController   : Invoked /api/v1/books/2 endpoint
+2020-08-14 21:33:24.491  INFO [book-service-app,12e6f962a4e1ac6d,12e6f962a4e1ac6d,true] 13741 --- [http-nio-8080-exec-7] c.epam.book_service.api.BookController   : Invoked /api/v1/books endpoint

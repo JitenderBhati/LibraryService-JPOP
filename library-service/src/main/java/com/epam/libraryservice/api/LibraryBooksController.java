@@ -7,6 +7,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -35,12 +36,14 @@ public class LibraryBooksController {
     }
 
     @PostMapping("books")
+    @PreAuthorize("hasRole('ROLE_admin')")
     public ResponseEntity<String> addBook(@RequestBody final BookInfo bookInfo) {
         log.info("Invoked /books with parameter: {}", bookInfo);
         return ResponseEntity.status(HttpStatus.CREATED).body(this.bookServiceProxy.addBook(bookInfo));
     }
 
     @DeleteMapping("books/{book_id}")
+    @PreAuthorize("hasRole('ROLE_admin')")
     public ResponseEntity<String> deleteBook(@PathVariable(value = "book_id") final int bookId) {
         log.info("Invoked /books/{}", bookId);
         return ResponseEntity.status(HttpStatus.OK).body(this.bookServiceProxy.deleteBook(bookId));

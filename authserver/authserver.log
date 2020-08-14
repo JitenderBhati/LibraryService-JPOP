@@ -4375,3 +4375,309 @@ Caused by: java.io.FileNotFoundException: class path resource [db/changelog/crea
 2020-08-14 20:38:32.060  INFO [Authorization Server,,,] 11569 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2020-08-14 20:38:38.382  INFO [Authorization Server,fb5118bf5ba2652c,fb5118bf5ba2652c,true] 11569 --- [http-nio-8383-exec-1] o.s.s.o.p.endpoint.CheckTokenEndpoint    : Handling error: InvalidTokenException, Token has expired
 2020-08-14 20:38:50.184  INFO [Authorization Server,533e742426336102,533e742426336102,true] 11569 --- [http-nio-8383-exec-4] o.s.s.o.p.token.store.JdbcTokenStore     : Failed to find access token for token ca70e83d-a858-4b97-9e03-2feb6cf9f41f
+2020-08-14 20:43:32.064  INFO [Authorization Server,,,] 11569 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-14 20:50:08.825  WARN [Authorization Server,,,] 11569 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m40s748ms).
+2020-08-14 20:52:42.818  INFO [Authorization Server,,,] 11569 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-14 20:57:42.829  INFO [Authorization Server,,,] 11569 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-14 21:02:42.839  INFO [Authorization Server,,,] 11569 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-14 21:07:42.841  INFO [Authorization Server,,,] 11569 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-14 21:12:42.849  INFO [Authorization Server,,,] 11569 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-14 21:17:42.858  INFO [Authorization Server,,,] 11569 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-14 21:21:03.053  INFO [Authorization Server,,,] 11569 --- [SpringContextShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application AUTHORIZATION SERVER with eureka with status DOWN
+2020-08-14 21:21:03.055  WARN [Authorization Server,,,] 11569 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1597420263055, current=DOWN, previous=UP]
+2020-08-14 21:21:03.056  INFO [Authorization Server,,,] 11569 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTHORIZATION SERVER/192.168.0.4:Authorization Server:8383: registering service...
+2020-08-14 21:21:03.084  INFO [Authorization Server,,,] 11569 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTHORIZATION SERVER/192.168.0.4:Authorization Server:8383 - registration status: 204
+2020-08-14 21:21:03.599  INFO [Authorization Server,,,] 11569 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-14 21:21:03.631  INFO [Authorization Server,,,] 11569 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-14 21:21:03.637  INFO [Authorization Server,,,] 11569 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-14 21:21:03.673  INFO [Authorization Server,,,] 11569 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-14 21:21:04.459  INFO [Authorization Server,,,] 11569 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2020-08-14 21:21:07.471  INFO [Authorization Server,,,] 11569 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2020-08-14 21:21:07.485  INFO [Authorization Server,,,] 11569 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTHORIZATION SERVER/192.168.0.4:Authorization Server:8383 - deregister  status: 200
+2020-08-14 21:21:07.516  INFO [Authorization Server,,,] 11569 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2020-08-14 21:21:16.147  INFO [Authorization Server,,,] 13451 --- [main] c.epam.authserver.AuthserverApplication  : No active profile set, falling back to default profiles: default
+2020-08-14 21:21:16.986  INFO [Authorization Server,,,] 13451 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-14 21:21:17.052  INFO [Authorization Server,,,] 13451 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60ms. Found 1 JPA repository interfaces.
+2020-08-14 21:21:17.143  WARN [Authorization Server,,,] 13451 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-08-14 21:21:17.400  INFO [Authorization Server,,,] 13451 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a2433c19-97b6-3dec-8c2a-4ca9e1bf9a61
+2020-08-14 21:21:17.914  INFO [Authorization Server,,,] 13451 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8383 (http)
+2020-08-14 21:21:17.921  INFO [Authorization Server,,,] 13451 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-14 21:21:17.922  INFO [Authorization Server,,,] 13451 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-14 21:21:18.021  INFO [Authorization Server,,,] 13451 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-14 21:21:18.022  INFO [Authorization Server,,,] 13451 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1857 ms
+2020-08-14 21:21:18.171  WARN [Authorization Server,,,] 13451 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-08-14 21:21:18.171  INFO [Authorization Server,,,] 13451 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-14 21:21:18.181  INFO [Authorization Server,,,] 13451 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@6a7aa675
+2020-08-14 21:21:19.206  INFO [Authorization Server,,,] 13451 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-14 21:21:19.518  INFO [Authorization Server,,,] 13451 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-14 21:21:20.179  INFO [Authorization Server,,,] 13451 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM AuthServerDB.DATABASECHANGELOGLOCK
+2020-08-14 21:21:20.202  INFO [Authorization Server,,,] 13451 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE AuthServerDB.DATABASECHANGELOGLOCK (ID INT NOT NULL, `LOCKED` BIT(1) NOT NULL, LOCKGRANTED datetime NULL, LOCKEDBY VARCHAR(255) NULL, CONSTRAINT PK_DATABASECHANGELOGLOCK PRIMARY KEY (ID))
+2020-08-14 21:21:20.242  INFO [Authorization Server,,,] 13451 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM AuthServerDB.DATABASECHANGELOGLOCK
+2020-08-14 21:21:20.249  INFO [Authorization Server,,,] 13451 --- [main] liquibase.executor.jvm.JdbcExecutor      : DELETE FROM AuthServerDB.DATABASECHANGELOGLOCK
+2020-08-14 21:21:20.253  INFO [Authorization Server,,,] 13451 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO AuthServerDB.DATABASECHANGELOGLOCK (ID, `LOCKED`) VALUES (1, 0)
+2020-08-14 21:21:20.261  INFO [Authorization Server,,,] 13451 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT `LOCKED` FROM AuthServerDB.DATABASECHANGELOGLOCK WHERE ID=1
+2020-08-14 21:21:20.274  INFO [Authorization Server,,,] 13451 --- [main] l.lockservice.StandardLockService        : Successfully acquired change log lock
+2020-08-14 21:21:21.659  INFO [Authorization Server,,,] 13451 --- [main] l.c.StandardChangeLogHistoryService      : Creating database history table with name: AuthServerDB.DATABASECHANGELOG
+2020-08-14 21:21:21.661  INFO [Authorization Server,,,] 13451 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE AuthServerDB.DATABASECHANGELOG (ID VARCHAR(255) NOT NULL, AUTHOR VARCHAR(255) NOT NULL, FILENAME VARCHAR(255) NOT NULL, DATEEXECUTED datetime NOT NULL, ORDEREXECUTED INT NOT NULL, EXECTYPE VARCHAR(10) NOT NULL, MD5SUM VARCHAR(35) NULL, `DESCRIPTION` VARCHAR(255) NULL, COMMENTS VARCHAR(255) NULL, TAG VARCHAR(255) NULL, LIQUIBASE VARCHAR(20) NULL, CONTEXTS VARCHAR(255) NULL, LABELS VARCHAR(255) NULL, DEPLOYMENT_ID VARCHAR(10) NULL)
+2020-08-14 21:21:21.698  INFO [Authorization Server,,,] 13451 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM AuthServerDB.DATABASECHANGELOG
+2020-08-14 21:21:21.702  INFO [Authorization Server,,,] 13451 --- [main] l.c.StandardChangeLogHistoryService      : Reading from AuthServerDB.DATABASECHANGELOG
+2020-08-14 21:21:21.703  INFO [Authorization Server,,,] 13451 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM AuthServerDB.DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2020-08-14 21:21:21.708  INFO [Authorization Server,,,] 13451 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM AuthServerDB.DATABASECHANGELOGLOCK
+2020-08-14 21:21:21.726  INFO [Authorization Server,,,] 13451 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE IF NOT EXISTS  oauth_client_details (
+  client_id VARCHAR(255) NOT NULL,
+  client_secret VARCHAR(255) NOT NULL,
+  web_server_redirect_uri VARCHAR(2048) DEFAULT NULL,
+  scope VARCHAR(255) DEFAULT NULL,
+  access_token_validity INT(11) DEFAULT NULL,
+  refresh_token_validity INT(11) DEFAULT NULL,
+  resource_ids VARCHAR(1024) DEFAULT NULL,
+  authorized_grant_types VARCHAR(1024) DEFAULT NULL,
+  authorities VARCHAR(1024) DEFAULT NULL,
+  additional_information VARCHAR(4096) DEFAULT NULL,
+  autoapprove VARCHAR(255) DEFAULT NULL,
+  PRIMARY KEY (client_id)
+)
+2020-08-14 21:21:21.767  INFO [Authorization Server,,,] 13451 --- [main] liquibase.changelog.ChangeSet            : Custom SQL executed
+2020-08-14 21:21:21.769  INFO [Authorization Server,,,] 13451 --- [main] liquibase.changelog.ChangeSet            : ChangeSet db/changelog/create-oauth-client-details-table-v1.0.sql::create-oauth_client_details-table::Jitender ran successfully in 49ms
+2020-08-14 21:21:21.770  INFO [Authorization Server,,,] 13451 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT MAX(ORDEREXECUTED) FROM AuthServerDB.DATABASECHANGELOG
+2020-08-14 21:21:21.773  INFO [Authorization Server,,,] 13451 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO AuthServerDB.DATABASECHANGELOG (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, `DESCRIPTION`, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('create-oauth_client_details-table', 'Jitender', 'db/changelog/create-oauth-client-details-table-v1.0.sql', NOW(), 1, '8:47d67ae775a81c1c9d85df44f67b455f', 'sql', '', 'EXECUTED', NULL, NULL, '3.8.9', '7420281714')
+2020-08-14 21:21:21.790  INFO [Authorization Server,,,] 13451 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE IF NOT EXISTS permission (
+  id INT(11) NOT NULL AUTO_INCREMENT,
+  name VARCHAR (512) DEFAULT NULL,
+  PRIMARY KEY (id),
+  UNIQUE KEY name (name)
+)
+2020-08-14 21:21:21.831  INFO [Authorization Server,,,] 13451 --- [main] liquibase.changelog.ChangeSet            : Custom SQL executed
+2020-08-14 21:21:21.833  INFO [Authorization Server,,,] 13451 --- [main] liquibase.changelog.ChangeSet            : ChangeSet db/changelog/create-permission-table-v1.0.sql::create-permission-table::Jitender ran successfully in 47ms
+2020-08-14 21:21:21.833  INFO [Authorization Server,,,] 13451 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO AuthServerDB.DATABASECHANGELOG (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, `DESCRIPTION`, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('create-permission-table', 'Jitender', 'db/changelog/create-permission-table-v1.0.sql', NOW(), 2, '8:0aaf5c237624c9dfe47f94ab4521f2e2', 'sql', '', 'EXECUTED', NULL, NULL, '3.8.9', '7420281714')
+2020-08-14 21:21:21.845  INFO [Authorization Server,,,] 13451 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE IF NOT EXISTS role (
+  id INT(11) NOT NULL AUTO_INCREMENT,
+  name VARCHAR(255) DEFAULT NULL,
+  PRIMARY KEY(id),
+  UNIQUE KEY name (name)
+)
+2020-08-14 21:21:21.882  INFO [Authorization Server,,,] 13451 --- [main] liquibase.changelog.ChangeSet            : Custom SQL executed
+2020-08-14 21:21:21.885  INFO [Authorization Server,,,] 13451 --- [main] liquibase.changelog.ChangeSet            : ChangeSet db/changelog/create-role-table-v1.0.sql::create-role-table::Jitender ran successfully in 43ms
+2020-08-14 21:21:21.886  INFO [Authorization Server,,,] 13451 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO AuthServerDB.DATABASECHANGELOG (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, `DESCRIPTION`, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('create-role-table', 'Jitender', 'db/changelog/create-role-table-v1.0.sql', NOW(), 3, '8:95c41a6251795dcb503d153649dc11c9', 'sql', '', 'EXECUTED', NULL, NULL, '3.8.9', '7420281714')
+2020-08-14 21:21:21.909  INFO [Authorization Server,,,] 13451 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE IF NOT EXISTS  user (
+  id INT(11) NOT NULL auto_increment,
+  username VARCHAR(100) NOT NULL,
+  password VARCHAR(1024) NOT NULL,
+  email VARCHAR(1024) NOT NULL,
+  enabled TINYINT(4) NOT NULL,
+  accountNonExpired TINYINT(4) NOT NULL,
+  credentialsNonExpired TINYINT(4) NOT NULL,
+  accountNonLocked TINYINT(4) NOT NULL,
+  PRIMARY KEY (id),
+  UNIQUE KEY username (username)
+)
+2020-08-14 21:21:21.966  INFO [Authorization Server,,,] 13451 --- [main] liquibase.changelog.ChangeSet            : Custom SQL executed
+2020-08-14 21:21:21.970  INFO [Authorization Server,,,] 13451 --- [main] liquibase.changelog.ChangeSet            : ChangeSet db/changelog/create-user-table-v1.0.sql::create-user-table::Jitender ran successfully in 68ms
+2020-08-14 21:21:21.971  INFO [Authorization Server,,,] 13451 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO AuthServerDB.DATABASECHANGELOG (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, `DESCRIPTION`, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('create-user-table', 'Jitender', 'db/changelog/create-user-table-v1.0.sql', NOW(), 4, '8:2a43a7a2baf52a34e1e6e8342eb28045', 'sql', '', 'EXECUTED', NULL, NULL, '3.8.9', '7420281714')
+2020-08-14 21:21:21.989  INFO [Authorization Server,,,] 13451 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE IF NOT EXISTS permission_role (
+  permission_id INT(11) DEFAULT NULL,
+  role_id INT(11) DEFAULT NULL ,
+  KEY permission_id (permission_id),
+  KEY role_id (role_id),
+  CONSTRAINT permission_role_ibfk_1 FOREIGN KEY (permission_id) REFERENCES permission (id),
+  CONSTRAINT permission_role_ibfk_2 FOREIGN KEY (role_id) REFERENCES role (id)
+)
+2020-08-14 21:21:22.033  INFO [Authorization Server,,,] 13451 --- [main] liquibase.changelog.ChangeSet            : Custom SQL executed
+2020-08-14 21:21:22.035  INFO [Authorization Server,,,] 13451 --- [main] liquibase.changelog.ChangeSet            : ChangeSet db/changelog/create-permission_role-table-v1.0.sql::create-permission_role-table::Jitender ran successfully in 50ms
+2020-08-14 21:21:22.035  INFO [Authorization Server,,,] 13451 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO AuthServerDB.DATABASECHANGELOG (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, `DESCRIPTION`, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('create-permission_role-table', 'Jitender', 'db/changelog/create-permission_role-table-v1.0.sql', NOW(), 5, '8:59c4fb735186976be29cf7b7418aa51f', 'sql', '', 'EXECUTED', NULL, NULL, '3.8.9', '7420281714')
+2020-08-14 21:21:22.050  INFO [Authorization Server,,,] 13451 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE IF NOT EXISTS role_user (
+  role_id INT(11) DEFAULT NULL,
+  user_id INT(11) DEFAULT NULL,
+  KEY role_id (role_id),
+  KEY user_id (user_id),
+  CONSTRAINT role_user_ibfk_1 FOREIGN KEY (role_id) REFERENCES role (id),
+  CONSTRAINT role_user_ibfk_2 FOREIGN KEY (user_id) REFERENCES user (id)
+)
+2020-08-14 21:21:22.097  INFO [Authorization Server,,,] 13451 --- [main] liquibase.changelog.ChangeSet            : Custom SQL executed
+2020-08-14 21:21:22.101  INFO [Authorization Server,,,] 13451 --- [main] liquibase.changelog.ChangeSet            : ChangeSet db/changelog/create-user_role-table-v1.0.sql::create-user_role-table::Jitender ran successfully in 55ms
+2020-08-14 21:21:22.102  INFO [Authorization Server,,,] 13451 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO AuthServerDB.DATABASECHANGELOG (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, `DESCRIPTION`, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('create-user_role-table', 'Jitender', 'db/changelog/create-user_role-table-v1.0.sql', NOW(), 6, '8:cc7b9ba05fa1bb779769df3336b68eb5', 'sql', '', 'EXECUTED', NULL, NULL, '3.8.9', '7420281714')
+2020-08-14 21:21:22.132  INFO [Authorization Server,,,] 13451 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE IF NOT EXISTS oauth_access_token (
+  token_id VARCHAR(256),
+  token LONG VARBINARY,
+  authentication_id VARCHAR(256) PRIMARY KEY,
+  user_name VARCHAR(256),
+  client_id VARCHAR(256),
+  authentication LONG VARBINARY,
+  refresh_token VARCHAR(256)
+)
+2020-08-14 21:21:22.180  INFO [Authorization Server,,,] 13451 --- [main] liquibase.changelog.ChangeSet            : Custom SQL executed
+2020-08-14 21:21:22.184  INFO [Authorization Server,,,] 13451 --- [main] liquibase.changelog.ChangeSet            : ChangeSet db/changelog/create-oauth_access_token-table-v1.0.sql::create-oauth_access_token-table::Jitender ran successfully in 59ms
+2020-08-14 21:21:22.185  INFO [Authorization Server,,,] 13451 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO AuthServerDB.DATABASECHANGELOG (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, `DESCRIPTION`, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('create-oauth_access_token-table', 'Jitender', 'db/changelog/create-oauth_access_token-table-v1.0.sql', NOW(), 7, '8:ae6e4c4b0a3b447cae25383cc2e22220', 'sql', '', 'EXECUTED', NULL, NULL, '3.8.9', '7420281714')
+2020-08-14 21:21:22.204  INFO [Authorization Server,,,] 13451 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE IF NOT EXISTS oauth_approvals (
+	userId VARCHAR(256),
+	clientId VARCHAR(256),
+	scope VARCHAR(256),
+	status VARCHAR(10),
+	expiresAt TIMESTAMP,
+	lastModifiedAt TIMESTAMP
+)
+2020-08-14 21:21:22.235  INFO [Authorization Server,,,] 13451 --- [main] liquibase.changelog.ChangeSet            : Custom SQL executed
+2020-08-14 21:21:22.237  INFO [Authorization Server,,,] 13451 --- [main] liquibase.changelog.ChangeSet            : ChangeSet db/changelog/create-oauth_approvals-table-v1.0.sql::create-oauth_code-table::Jitender ran successfully in 37ms
+2020-08-14 21:21:22.238  INFO [Authorization Server,,,] 13451 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO AuthServerDB.DATABASECHANGELOG (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, `DESCRIPTION`, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('create-oauth_code-table', 'Jitender', 'db/changelog/create-oauth_approvals-table-v1.0.sql', NOW(), 8, '8:52e3b99f86afb17e4a230579ad789f08', 'sql', '', 'EXECUTED', NULL, NULL, '3.8.9', '7420281714')
+2020-08-14 21:21:22.253  INFO [Authorization Server,,,] 13451 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE IF NOT EXISTS oauth_client_token (
+  token_id VARCHAR(256),
+  token LONG VARBINARY,
+  authentication_id VARCHAR(256) PRIMARY KEY,
+  user_name VARCHAR(256),
+  client_id VARCHAR(256)
+)
+2020-08-14 21:21:22.283  INFO [Authorization Server,,,] 13451 --- [main] liquibase.changelog.ChangeSet            : Custom SQL executed
+2020-08-14 21:21:22.285  INFO [Authorization Server,,,] 13451 --- [main] liquibase.changelog.ChangeSet            : ChangeSet db/changelog/create-oauth_client_token-table-v1.0.sql::create-oauth_client_token-table::Jitender ran successfully in 36ms
+2020-08-14 21:21:22.285  INFO [Authorization Server,,,] 13451 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO AuthServerDB.DATABASECHANGELOG (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, `DESCRIPTION`, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('create-oauth_client_token-table', 'Jitender', 'db/changelog/create-oauth_client_token-table-v1.0.sql', NOW(), 9, '8:01e193460593d783b2cab111606a16af', 'sql', '', 'EXECUTED', NULL, NULL, '3.8.9', '7420281714')
+2020-08-14 21:21:22.299  INFO [Authorization Server,,,] 13451 --- [main] liquibase.executor.jvm.JdbcExecutor      : create table if not exists oauth_code (
+  code VARCHAR(256), authentication LONG VARBINARY
+)
+2020-08-14 21:21:22.337  INFO [Authorization Server,,,] 13451 --- [main] liquibase.changelog.ChangeSet            : Custom SQL executed
+2020-08-14 21:21:22.339  INFO [Authorization Server,,,] 13451 --- [main] liquibase.changelog.ChangeSet            : ChangeSet db/changelog/create-oauth_code-table-v1.0.sql::create-oauth_code-table::Jitender ran successfully in 43ms
+2020-08-14 21:21:22.341  INFO [Authorization Server,,,] 13451 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO AuthServerDB.DATABASECHANGELOG (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, `DESCRIPTION`, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('create-oauth_code-table', 'Jitender', 'db/changelog/create-oauth_code-table-v1.0.sql', NOW(), 10, '8:d7c95954b36168aafb514282e6af0f58', 'sql', '', 'EXECUTED', NULL, NULL, '3.8.9', '7420281714')
+2020-08-14 21:21:22.373  INFO [Authorization Server,,,] 13451 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE IF NOT EXISTS oauth_refresh_token (
+  token_id VARCHAR(256),
+  token LONG VARBINARY,
+  authentication LONG VARBINARY
+)
+2020-08-14 21:21:22.424  INFO [Authorization Server,,,] 13451 --- [main] liquibase.changelog.ChangeSet            : Custom SQL executed
+2020-08-14 21:21:22.427  INFO [Authorization Server,,,] 13451 --- [main] liquibase.changelog.ChangeSet            : ChangeSet db/changelog/create-oauth_refresh_token-table-v1.0.sql::create-oauth_access_token-table::Jitender ran successfully in 62ms
+2020-08-14 21:21:22.427  INFO [Authorization Server,,,] 13451 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO AuthServerDB.DATABASECHANGELOG (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, `DESCRIPTION`, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('create-oauth_access_token-table', 'Jitender', 'db/changelog/create-oauth_refresh_token-table-v1.0.sql', NOW(), 11, '8:f379ac0400276b97d8801a05f4744a4d', 'sql', '', 'EXECUTED', NULL, NULL, '3.8.9', '7420281714')
+2020-08-14 21:21:22.442  INFO [Authorization Server,,,] 13451 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT IGNORE INTO oauth_client_details (
+                                            client_id,
+                                            client_secret,
+                                            web_server_redirect_uri,
+                                            scope,
+                                            access_token_validity,
+                                            refresh_token_validity,
+                                            resource_ids,
+                                            authorized_grant_types,
+                                            additional_information)
+VALUES ('desktop',
+'$2y$12$qdwXuinr.QzS48lM7msMgOz2I3kdhb74iosCSYj3dOJTIxRvz/y0.',
+'http://localhost:8282/code',
+'READ,WRITE',
+'3600',
+'10000',
+'library,user,book',
+'authorization_code,password,refresh_token,implicit',
+'{}')
+2020-08-14 21:21:22.448  INFO [Authorization Server,,,] 13451 --- [main] liquibase.changelog.ChangeSet            : Custom SQL executed
+2020-08-14 21:21:22.452  INFO [Authorization Server,,,] 13451 --- [main] liquibase.changelog.ChangeSet            : ChangeSet db/changelog/insert-into-oauth_client_detail-table-v1.0.sql::insert-into-oauth_detail-table::Jitender ran successfully in 14ms
+2020-08-14 21:21:22.453  INFO [Authorization Server,,,] 13451 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO AuthServerDB.DATABASECHANGELOG (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, `DESCRIPTION`, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('insert-into-oauth_detail-table', 'Jitender', 'db/changelog/insert-into-oauth_client_detail-table-v1.0.sql', NOW(), 12, '8:a0a634125cf096d27ff477c99d552b32', 'sql', '', 'EXECUTED', NULL, NULL, '3.8.9', '7420281714')
+2020-08-14 21:21:22.469  INFO [Authorization Server,,,] 13451 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO permission (NAME) VALUES
+ ('create'),
+ ('read'),
+ ('update'),
+ ('delete')
+2020-08-14 21:21:22.476  INFO [Authorization Server,,,] 13451 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO role (NAME) VALUES
+		('ROLE_admin'),('ROLE_user')
+2020-08-14 21:21:22.481  INFO [Authorization Server,,,] 13451 --- [main] liquibase.changelog.ChangeSet            : Custom SQL executed
+2020-08-14 21:21:22.487  INFO [Authorization Server,,,] 13451 --- [main] liquibase.changelog.ChangeSet            : ChangeSet db/changelog/insert-into-permission_and_role-table-v1.0.sql::insert-into-permission_and_role-table::Jitender ran successfully in 22ms
+2020-08-14 21:21:22.488  INFO [Authorization Server,,,] 13451 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO AuthServerDB.DATABASECHANGELOG (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, `DESCRIPTION`, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('insert-into-permission_and_role-table', 'Jitender', 'db/changelog/insert-into-permission_and_role-table-v1.0.sql', NOW(), 13, '8:440d113ca9b67e52161c08dea4162efa', 'sql', '', 'EXECUTED', NULL, NULL, '3.8.9', '7420281714')
+2020-08-14 21:21:22.500  INFO [Authorization Server,,,] 13451 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO permission_role (PERMISSION_ID, ROLE_ID) VALUES
+     (1,1), 
+     (2,1), 
+     (3,1), 
+     (4,1), 
+     (2,2),  
+     (3,2)
+2020-08-14 21:21:22.507  INFO [Authorization Server,,,] 13451 --- [main] liquibase.changelog.ChangeSet            : Custom SQL executed
+2020-08-14 21:21:22.515  INFO [Authorization Server,,,] 13451 --- [main] liquibase.changelog.ChangeSet            : ChangeSet db/changelog/insert-into-permission_role-table-v1.0.sql::insert-into-permission_role-table::Jitender ran successfully in 18ms
+2020-08-14 21:21:22.516  INFO [Authorization Server,,,] 13451 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO AuthServerDB.DATABASECHANGELOG (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, `DESCRIPTION`, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('insert-into-permission_role-table', 'Jitender', 'db/changelog/insert-into-permission_role-table-v1.0.sql', NOW(), 14, '8:5c3211d1f7e3e1f981b307f66c1f036c', 'sql', '', 'EXECUTED', NULL, NULL, '3.8.9', '7420281714')
+2020-08-14 21:21:22.538  INFO [Authorization Server,,,] 13451 --- [main] liquibase.executor.jvm.JdbcExecutor      : insert into user (
+                    id,
+                    username,
+                    password,
+                    email,
+                    enabled,
+                    accountNonExpired,
+                    credentialsNonExpired,
+                    accountNonLocked)
+    VALUES ('1',
+    'jitender',
+    '$2y$12$4dTQCY2tEJRrNgLffGK8lem9njDz65ou4GnDxNDIbxz1SR8fnmvha',
+    'jitender@epam.com',
+    '1',
+    '1',
+    '1',
+    '1')
+2020-08-14 21:21:22.551  INFO [Authorization Server,,,] 13451 --- [main] liquibase.executor.jvm.JdbcExecutor      : insert into user (
+                    id,
+                    username,
+                    password,
+                    email,
+                    enabled,
+                    accountNonExpired,
+                    credentialsNonExpired,
+                    accountNonLocked)
+    VALUES ('2',
+    'admin',
+    '$2y$12$0HpfD7Qw3C8kqrY2/TvfBOBuZbmYhyA0rhRe09Y0Pm.VyixEpxqNy',
+    'admin@epam.com',
+    '1',
+    '1',
+    '1',
+    '1')
+2020-08-14 21:21:22.560  INFO [Authorization Server,,,] 13451 --- [main] liquibase.changelog.ChangeSet            : Custom SQL executed
+2020-08-14 21:21:22.570  INFO [Authorization Server,,,] 13451 --- [main] liquibase.changelog.ChangeSet            : ChangeSet db/changelog/insert-into-user-table-v1.0.sql::insert-into-user-table::Jitender ran successfully in 39ms
+2020-08-14 21:21:22.572  INFO [Authorization Server,,,] 13451 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO AuthServerDB.DATABASECHANGELOG (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, `DESCRIPTION`, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('insert-into-user-table', 'Jitender', 'db/changelog/insert-into-user-table-v1.0.sql', NOW(), 15, '8:d188f0a788af7de52a538d1e0747f512', 'sql', '', 'EXECUTED', NULL, NULL, '3.8.9', '7420281714')
+2020-08-14 21:21:22.604  INFO [Authorization Server,,,] 13451 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO role_user (ROLE_ID, USER_ID)
+    VALUES
+    (1, 2) ,
+    (2, 1)
+2020-08-14 21:21:22.614  INFO [Authorization Server,,,] 13451 --- [main] liquibase.changelog.ChangeSet            : Custom SQL executed
+2020-08-14 21:21:22.622  INFO [Authorization Server,,,] 13451 --- [main] liquibase.changelog.ChangeSet            : ChangeSet db/changelog/insert-into-user_role-table-v1.0.sql::insert-into-role_user-table::Jitender ran successfully in 27ms
+2020-08-14 21:21:22.622  INFO [Authorization Server,,,] 13451 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO AuthServerDB.DATABASECHANGELOG (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, `DESCRIPTION`, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('insert-into-role_user-table', 'Jitender', 'db/changelog/insert-into-user_role-table-v1.0.sql', NOW(), 16, '8:6fe55f2eba80cd9c258ef147ed12f682', 'sql', '', 'EXECUTED', NULL, NULL, '3.8.9', '7420281714')
+2020-08-14 21:21:22.646  INFO [Authorization Server,,,] 13451 --- [main] l.lockservice.StandardLockService        : Successfully released change log lock
+2020-08-14 21:21:22.715  INFO [Authorization Server,,,] 13451 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-14 21:21:22.802  INFO [Authorization Server,,,] 13451 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-14 21:21:22.865  INFO [Authorization Server,,,] 13451 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.20.Final
+2020-08-14 21:21:22.883  WARN [Authorization Server,,,] 13451 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-14 21:21:22.970  INFO [Authorization Server,,,] 13451 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-14 21:21:23.065  INFO [Authorization Server,,,] 13451 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-08-14 21:21:23.105  WARN [Authorization Server,,,] 13451 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-08-14 21:21:23.105  INFO [Authorization Server,,,] 13451 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-14 21:21:23.657  INFO [Authorization Server,,,] 13451 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-14 21:21:23.665  INFO [Authorization Server,,,] 13451 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-14 21:21:24.030  INFO [Authorization Server,,,] 13451 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3c0b82f3, org.springframework.security.web.context.SecurityContextPersistenceFilter@3129bf02, org.springframework.security.web.header.HeaderWriterFilter@47046907, org.springframework.security.web.authentication.logout.LogoutFilter@2445cad, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@20e0becd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@26300f29, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@bb96f3f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@62125fb5, org.springframework.security.web.session.SessionManagementFilter@c56c25b, org.springframework.security.web.access.ExceptionTranslationFilter@54d7d2ba, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@255130e3]
+2020-08-14 21:21:24.047  INFO [Authorization Server,,,] 13451 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3d26e7ba, org.springframework.security.web.context.SecurityContextPersistenceFilter@24d8cd8d, org.springframework.security.web.header.HeaderWriterFilter@441c8fa3, org.springframework.security.web.csrf.CsrfFilter@215998b6, org.springframework.security.web.authentication.logout.LogoutFilter@1ecc1a99, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@19121e33, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3c596a57, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@708d7fb7, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7584b20d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@74e72805, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@54a6c0ad, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@786ce57e, org.springframework.security.web.session.SessionManagementFilter@2769efc9, org.springframework.security.web.access.ExceptionTranslationFilter@fdbf68d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7f31e2fb]
+2020-08-14 21:21:24.180  WARN [Authorization Server,,,] 13451 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-08-14 21:21:24.300  WARN [Authorization Server,,,] 13451 --- [main] s.o.SpringCloudSecurityAutoConfiguration : All Spring Cloud Security modules and starters are deprecated. They will be moved to individual projects in the next major release.
+2020-08-14 21:21:24.368  INFO [Authorization Server,,,] 13451 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-14 21:21:24.447  INFO [Authorization Server,,,] 13451 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-08-14 21:21:24.477  INFO [Authorization Server,,,] 13451 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-08-14 21:21:24.528  INFO [Authorization Server,,,] 13451 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-08-14 21:21:24.528  INFO [Authorization Server,,,] 13451 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-08-14 21:21:24.647  INFO [Authorization Server,,,] 13451 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-08-14 21:21:24.647  INFO [Authorization Server,,,] 13451 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-08-14 21:21:24.801  INFO [Authorization Server,,,] 13451 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-14 21:21:24.826  INFO [Authorization Server,,,] 13451 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-08-14 21:21:24.826  INFO [Authorization Server,,,] 13451 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-08-14 21:21:24.826  INFO [Authorization Server,,,] 13451 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-08-14 21:21:24.826  INFO [Authorization Server,,,] 13451 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-08-14 21:21:24.826  INFO [Authorization Server,,,] 13451 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-08-14 21:21:24.827  INFO [Authorization Server,,,] 13451 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-08-14 21:21:24.827  INFO [Authorization Server,,,] 13451 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-08-14 21:21:24.967  INFO [Authorization Server,,,] 13451 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-08-14 21:21:25.005  INFO [Authorization Server,,,] 13451 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-08-14 21:21:25.007  INFO [Authorization Server,,,] 13451 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-08-14 21:21:25.012  INFO [Authorization Server,,,] 13451 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1597420285010 with initial instances count: 4
+2020-08-14 21:21:25.021  INFO [Authorization Server,,,] 13451 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application AUTHORIZATION SERVER with eureka with status UP
+2020-08-14 21:21:25.022  INFO [Authorization Server,,,] 13451 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1597420285022, current=UP, previous=STARTING]
+2020-08-14 21:21:25.024  INFO [Authorization Server,,,] 13451 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTHORIZATION SERVER/192.168.0.4:Authorization Server:8383: registering service...
+2020-08-14 21:21:25.059  INFO [Authorization Server,,,] 13451 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8383 (http) with context path ''
+2020-08-14 21:21:25.059  INFO [Authorization Server,,,] 13451 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8383
+2020-08-14 21:21:25.064  INFO [Authorization Server,,,] 13451 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-08-14 21:21:25.077  INFO [Authorization Server,,,] 13451 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTHORIZATION SERVER/192.168.0.4:Authorization Server:8383 - registration status: 204
+2020-08-14 21:21:25.419  INFO [Authorization Server,,,] 13451 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-08-14 21:21:25.448  INFO [Authorization Server,,,] 13451 --- [main] c.epam.authserver.AuthserverApplication  : Started AuthserverApplication in 10.388 seconds (JVM running for 15.911)
+2020-08-14 21:26:24.833  INFO [Authorization Server,,,] 13451 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-14 21:31:24.843  INFO [Authorization Server,,,] 13451 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-14 21:31:38.140  INFO [Authorization Server,,,] 13451 --- [http-nio-8383-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-14 21:31:38.141  INFO [Authorization Server,,,] 13451 --- [http-nio-8383-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-14 21:31:38.229  INFO [Authorization Server,,,] 13451 --- [http-nio-8383-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 88 ms
+2020-08-14 21:31:40.213  INFO [Authorization Server,1e61993426afcf01,1e61993426afcf01,true] 13451 --- [http-nio-8383-exec-1] o.s.s.o.p.token.store.JdbcTokenStore     : Failed to find access token for token 62ee378a-46c6-47c9-bc71-559f8a7bba06
+2020-08-14 21:31:40.218  INFO [Authorization Server,1e61993426afcf01,1e61993426afcf01,true] 13451 --- [http-nio-8383-exec-1] o.s.s.o.p.endpoint.CheckTokenEndpoint    : Handling error: InvalidTokenException, Token was not recognised
+2020-08-14 21:32:01.779  INFO [Authorization Server,bb8e6509722f3b54,bb8e6509722f3b54,true] 13451 --- [http-nio-8383-exec-3] o.s.s.o.p.token.store.JdbcTokenStore     : Failed to find access token for token 04640e72-16da-478b-8fc9-10e669da031a
+2020-08-14 21:33:02.504  INFO [Authorization Server,afe691bb54c1db02,afe691bb54c1db02,true] 13451 --- [http-nio-8383-exec-7] o.s.s.o.p.token.store.JdbcTokenStore     : Failed to find access token for token ae8b2b3c-ff1d-431c-a2cf-69c7ed84b6cc

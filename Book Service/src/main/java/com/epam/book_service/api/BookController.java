@@ -8,6 +8,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
@@ -25,6 +26,7 @@ public class BookController {
     }
 
     @GetMapping
+    @PreAuthorize("hasRole('ROLE_admin')")
     public ResponseEntity<List<Book>> getAllBooks() {
         log.info("Invoked /api/v1/books endpoint");
         var listOfBooks = this.bookService.getBooks();
@@ -34,12 +36,14 @@ public class BookController {
     }
 
     @GetMapping("{bookId}")
+    @PreAuthorize("hasAuthority('read')")
     public ResponseEntity<Book> getBook(@PathVariable("bookId") final Long bookId) {
         log.info("Invoked /api/v1/books/{} endpoint", bookId);
         return ResponseEntity.status(HttpStatus.OK).body(this.bookService.getBook(bookId));
     }
 
     @PostMapping
+    @PreAuthorize("hasAuthority('create')")
     public ResponseEntity<String> addBook(@Valid @RequestBody final BookDto book) {
         log.info("Invoked /api/v1/books endpoint with parameter: {}", book);
         this.bookService.addBook(book);
@@ -49,6 +53,7 @@ public class BookController {
     }
 
     @DeleteMapping("{bookId}")
+    @PreAuthorize("hasAuthority('delete')")
     public ResponseEntity<String> deleteBook(@PathVariable("bookId") final Long bookId) {
         log.info("Invoked /api/v1/books/{} endpoint", bookId);
         this.bookService.deleteBook(bookId);
@@ -56,6 +61,7 @@ public class BookController {
     }
 
     @PutMapping("{bookId}")
+    @PreAuthorize("hasAuthority('update')")
     public ResponseEntity<Book> updateBook(@PathVariable("bookId") final Long id,
                                            @Valid @RequestBody final BookDto book) {
         log.info("Invoked /api/v1/books/{} endpoint with parameter: {}", id, book);
