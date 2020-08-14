@@ -3913,3 +3913,446 @@ security.oauth2.client.client-secret = e9a24c27-cec5-4db9-a337-69db7288663c
 2020-08-14 17:54:27.033  INFO [Authorization Server,,,] 9020 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
 2020-08-14 17:54:27.039  INFO [Authorization Server,,,] 9020 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTHORIZATION SERVER/192.168.0.4:Authorization Server:8383 - deregister  status: 200
 2020-08-14 17:54:27.055  INFO [Authorization Server,,,] 9020 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2020-08-14 18:47:05.467  INFO [Authorization Server,,,] 10675 --- [main] c.epam.authserver.AuthserverApplication  : No active profile set, falling back to default profiles: default
+2020-08-14 18:47:06.380  INFO [Authorization Server,,,] 10675 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-14 18:47:06.444  INFO [Authorization Server,,,] 10675 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56ms. Found 1 JPA repository interfaces.
+2020-08-14 18:47:06.551  WARN [Authorization Server,,,] 10675 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-08-14 18:47:06.787  INFO [Authorization Server,,,] 10675 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=7bb9830e-77c1-3373-a2c4-b2a7ad013331
+2020-08-14 18:47:07.292  INFO [Authorization Server,,,] 10675 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8383 (http)
+2020-08-14 18:47:07.298  INFO [Authorization Server,,,] 10675 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-14 18:47:07.298  INFO [Authorization Server,,,] 10675 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-14 18:47:07.382  INFO [Authorization Server,,,] 10675 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-14 18:47:07.382  INFO [Authorization Server,,,] 10675 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1898 ms
+2020-08-14 18:47:07.526  WARN [Authorization Server,,,] 10675 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-08-14 18:47:07.526  INFO [Authorization Server,,,] 10675 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-14 18:47:07.535  INFO [Authorization Server,,,] 10675 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@8315e4a
+2020-08-14 18:47:08.452  INFO [Authorization Server,,,] 10675 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-14 18:47:08.781  INFO [Authorization Server,,,] 10675 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-14 18:47:09.656  INFO [Authorization Server,,,] 10675 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM AuthServerDB.DATABASECHANGELOGLOCK
+2020-08-14 18:47:09.667  INFO [Authorization Server,,,] 10675 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM AuthServerDB.DATABASECHANGELOGLOCK
+2020-08-14 18:47:09.672  INFO [Authorization Server,,,] 10675 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT `LOCKED` FROM AuthServerDB.DATABASECHANGELOGLOCK WHERE ID=1
+2020-08-14 18:47:09.693  INFO [Authorization Server,,,] 10675 --- [main] l.lockservice.StandardLockService        : Successfully acquired change log lock
+2020-08-14 18:47:10.870  INFO [Authorization Server,,,] 10675 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT MD5SUM FROM AuthServerDB.DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+2020-08-14 18:47:10.872  INFO [Authorization Server,,,] 10675 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM AuthServerDB.DATABASECHANGELOG
+2020-08-14 18:47:10.875  INFO [Authorization Server,,,] 10675 --- [main] l.c.StandardChangeLogHistoryService      : Reading from AuthServerDB.DATABASECHANGELOG
+2020-08-14 18:47:10.876  INFO [Authorization Server,,,] 10675 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM AuthServerDB.DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2020-08-14 18:47:10.893  INFO [Authorization Server,,,] 10675 --- [main] l.lockservice.StandardLockService        : Successfully released change log lock
+2020-08-14 18:47:10.972  INFO [Authorization Server,,,] 10675 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-14 18:47:11.050  INFO [Authorization Server,,,] 10675 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-14 18:47:11.127  INFO [Authorization Server,,,] 10675 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.20.Final
+2020-08-14 18:47:11.138  WARN [Authorization Server,,,] 10675 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-14 18:47:11.243  INFO [Authorization Server,,,] 10675 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-14 18:47:11.315  WARN [Authorization Server,,,] 10675 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-08-14 18:47:11.315  INFO [Authorization Server,,,] 10675 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-14 18:47:11.321  INFO [Authorization Server,,,] 10675 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-08-14 18:47:11.882  INFO [Authorization Server,,,] 10675 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-14 18:47:11.888  INFO [Authorization Server,,,] 10675 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-14 18:47:12.175  INFO [Authorization Server,,,] 10675 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@413d2d3e, org.springframework.security.web.context.SecurityContextPersistenceFilter@329b6556, org.springframework.security.web.header.HeaderWriterFilter@58c02b7f, org.springframework.security.web.authentication.logout.LogoutFilter@5d585ca0, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2dd61113, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6a6ee06d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@433ec38c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@9addea4, org.springframework.security.web.session.SessionManagementFilter@453d15d7, org.springframework.security.web.access.ExceptionTranslationFilter@2ce37955, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@47046907]
+2020-08-14 18:47:12.191  INFO [Authorization Server,,,] 10675 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@599ad726, org.springframework.security.web.context.SecurityContextPersistenceFilter@6ce766fa, org.springframework.security.web.header.HeaderWriterFilter@486b35d5, org.springframework.security.web.csrf.CsrfFilter@3ea10f3, org.springframework.security.web.authentication.logout.LogoutFilter@5407cc39, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6689f455, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@55c33059, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3076282e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@15c24b0c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7ebc78f1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6fe83f6e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@740224cc, org.springframework.security.web.session.SessionManagementFilter@44cfdbd9, org.springframework.security.web.access.ExceptionTranslationFilter@4f5bb24d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5fe46369]
+2020-08-14 18:47:12.318  WARN [Authorization Server,,,] 10675 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-08-14 18:47:12.430  WARN [Authorization Server,,,] 10675 --- [main] s.o.SpringCloudSecurityAutoConfiguration : All Spring Cloud Security modules and starters are deprecated. They will be moved to individual projects in the next major release.
+2020-08-14 18:47:12.498  INFO [Authorization Server,,,] 10675 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-14 18:47:12.588  INFO [Authorization Server,,,] 10675 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-08-14 18:47:12.621  INFO [Authorization Server,,,] 10675 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-08-14 18:47:12.682  INFO [Authorization Server,,,] 10675 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-08-14 18:47:12.682  INFO [Authorization Server,,,] 10675 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-08-14 18:47:12.800  INFO [Authorization Server,,,] 10675 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-08-14 18:47:12.800  INFO [Authorization Server,,,] 10675 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-08-14 18:47:12.928  INFO [Authorization Server,,,] 10675 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-14 18:47:12.952  INFO [Authorization Server,,,] 10675 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-08-14 18:47:12.952  INFO [Authorization Server,,,] 10675 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-08-14 18:47:12.953  INFO [Authorization Server,,,] 10675 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-08-14 18:47:12.953  INFO [Authorization Server,,,] 10675 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-08-14 18:47:12.953  INFO [Authorization Server,,,] 10675 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-08-14 18:47:12.953  INFO [Authorization Server,,,] 10675 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-08-14 18:47:12.953  INFO [Authorization Server,,,] 10675 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-08-14 18:47:13.098  INFO [Authorization Server,,,] 10675 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-08-14 18:47:13.100  INFO [Authorization Server,,,] 10675 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-08-14 18:47:13.102  INFO [Authorization Server,,,] 10675 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-08-14 18:47:13.105  INFO [Authorization Server,,,] 10675 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1597411033104 with initial instances count: 1
+2020-08-14 18:47:13.112  INFO [Authorization Server,,,] 10675 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application AUTHORIZATION SERVER with eureka with status UP
+2020-08-14 18:47:13.113  INFO [Authorization Server,,,] 10675 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1597411033113, current=UP, previous=STARTING]
+2020-08-14 18:47:13.114  INFO [Authorization Server,,,] 10675 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTHORIZATION SERVER/192.168.0.4:Authorization Server:8383: registering service...
+2020-08-14 18:47:13.143  INFO [Authorization Server,,,] 10675 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8383 (http) with context path ''
+2020-08-14 18:47:13.144  INFO [Authorization Server,,,] 10675 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8383
+2020-08-14 18:47:13.148  INFO [Authorization Server,,,] 10675 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTHORIZATION SERVER/192.168.0.4:Authorization Server:8383 - registration status: 204
+2020-08-14 18:47:13.149  INFO [Authorization Server,,,] 10675 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-08-14 18:47:13.465  INFO [Authorization Server,,,] 10675 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-08-14 18:47:13.490  INFO [Authorization Server,,,] 10675 --- [main] c.epam.authserver.AuthserverApplication  : Started AuthserverApplication in 9.189 seconds (JVM running for 15.077)
+2020-08-14 18:52:12.959  INFO [Authorization Server,,,] 10675 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-14 18:57:12.968  INFO [Authorization Server,,,] 10675 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-14 19:02:12.987  INFO [Authorization Server,,,] 10675 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-14 19:14:31.585  WARN [Authorization Server,,,] 10675 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m52s553ms).
+2020-08-14 19:17:35.550  INFO [Authorization Server,,,] 10675 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-14 19:22:35.563  INFO [Authorization Server,,,] 10675 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-14 19:26:04.924  INFO [Authorization Server,,,] 10675 --- [SpringContextShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application AUTHORIZATION SERVER with eureka with status DOWN
+2020-08-14 19:26:04.925  WARN [Authorization Server,,,] 10675 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1597413364925, current=DOWN, previous=UP]
+2020-08-14 19:26:04.926  INFO [Authorization Server,,,] 10675 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTHORIZATION SERVER/192.168.0.4:Authorization Server:8383: registering service...
+2020-08-14 19:26:04.936  INFO [Authorization Server,,,] 10675 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTHORIZATION SERVER/192.168.0.4:Authorization Server:8383 - registration status: 204
+2020-08-14 19:26:05.061  INFO [Authorization Server,,,] 10675 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-14 19:26:05.073  INFO [Authorization Server,,,] 10675 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-14 19:26:05.075  INFO [Authorization Server,,,] 10675 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-14 19:26:05.134  INFO [Authorization Server,,,] 10675 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-14 19:26:06.139  INFO [Authorization Server,,,] 10675 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2020-08-14 19:26:09.142  INFO [Authorization Server,,,] 10675 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2020-08-14 19:26:09.148  INFO [Authorization Server,,,] 10675 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTHORIZATION SERVER/192.168.0.4:Authorization Server:8383 - deregister  status: 200
+2020-08-14 19:26:09.164  INFO [Authorization Server,,,] 10675 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2020-08-14 19:26:22.453  INFO [Authorization Server,,,] 11391 --- [main] c.epam.authserver.AuthserverApplication  : No active profile set, falling back to default profiles: default
+2020-08-14 19:26:23.281  INFO [Authorization Server,,,] 11391 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-14 19:26:23.339  INFO [Authorization Server,,,] 11391 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51ms. Found 1 JPA repository interfaces.
+2020-08-14 19:26:23.433  WARN [Authorization Server,,,] 11391 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-08-14 19:26:23.665  INFO [Authorization Server,,,] 11391 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a2433c19-97b6-3dec-8c2a-4ca9e1bf9a61
+2020-08-14 19:26:24.144  INFO [Authorization Server,,,] 11391 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8383 (http)
+2020-08-14 19:26:24.151  INFO [Authorization Server,,,] 11391 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-14 19:26:24.151  INFO [Authorization Server,,,] 11391 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-14 19:26:24.249  INFO [Authorization Server,,,] 11391 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-14 19:26:24.249  INFO [Authorization Server,,,] 11391 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1769 ms
+2020-08-14 19:26:24.387  WARN [Authorization Server,,,] 11391 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-08-14 19:26:24.388  INFO [Authorization Server,,,] 11391 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-14 19:26:24.397  INFO [Authorization Server,,,] 11391 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@6eded11a
+2020-08-14 19:26:25.342  INFO [Authorization Server,,,] 11391 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-14 19:26:25.620  INFO [Authorization Server,,,] 11391 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-14 19:26:26.149  INFO [Authorization Server,,,] 11391 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM AuthServerDB.DATABASECHANGELOGLOCK
+2020-08-14 19:26:26.157  INFO [Authorization Server,,,] 11391 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM AuthServerDB.DATABASECHANGELOGLOCK
+2020-08-14 19:26:26.162  INFO [Authorization Server,,,] 11391 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT `LOCKED` FROM AuthServerDB.DATABASECHANGELOGLOCK WHERE ID=1
+2020-08-14 19:26:26.177  INFO [Authorization Server,,,] 11391 --- [main] l.lockservice.StandardLockService        : Successfully acquired change log lock
+2020-08-14 19:26:27.207  INFO [Authorization Server,,,] 11391 --- [main] l.lockservice.StandardLockService        : Successfully released change log lock
+2020-08-14 19:26:27.212  WARN [Authorization Server,,,] 11391 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.ChangeLogParseException: liquibase.exception.SetupException: java.io.FileNotFoundException: class path resource [db/changelog/create-oauth_refresh_token-table-v1.0.sql] cannot be resolved to URL because it does not exist
+2020-08-14 19:26:27.212  INFO [Authorization Server,,,] 11391 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-14 19:26:27.230  INFO [Authorization Server,,,] 11391 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-14 19:26:28.234  WARN [Authorization Server,,,] 11391 --- [main] z.r.AsyncReporter$BoundedAsyncReporter   : Timed out waiting for in-flight spans to send
+2020-08-14 19:26:28.237  INFO [Authorization Server,,,] 11391 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-08-14 19:26:28.259  INFO [Authorization Server,,,] 11391 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-08-14 19:26:28.268 ERROR [Authorization Server,,,] 11391 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.ChangeLogParseException: liquibase.exception.SetupException: java.io.FileNotFoundException: class path resource [db/changelog/create-oauth_refresh_token-table-v1.0.sql] cannot be resolved to URL because it does not exist
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1794) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:311) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1109) ~[spring-context-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869) ~[spring-context-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) ~[spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) ~[spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) ~[spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) ~[spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
+	at com.epam.authserver.AuthserverApplication.main(AuthserverApplication.java:12) ~[classes/:na]
+Caused by: liquibase.exception.ChangeLogParseException: liquibase.exception.SetupException: java.io.FileNotFoundException: class path resource [db/changelog/create-oauth_refresh_token-table-v1.0.sql] cannot be resolved to URL because it does not exist
+	at liquibase.parser.core.xml.AbstractChangeLogParser.parse(AbstractChangeLogParser.java:25) ~[liquibase-core-3.8.9.jar:na]
+	at liquibase.Liquibase.getDatabaseChangeLog(Liquibase.java:217) ~[liquibase-core-3.8.9.jar:na]
+	at liquibase.Liquibase.update(Liquibase.java:190) ~[liquibase-core-3.8.9.jar:na]
+	at liquibase.Liquibase.update(Liquibase.java:179) ~[liquibase-core-3.8.9.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:366) ~[liquibase-core-3.8.9.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:314) ~[liquibase-core-3.8.9.jar:na]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1790) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	... 19 common frames omitted
+Caused by: liquibase.exception.SetupException: java.io.FileNotFoundException: class path resource [db/changelog/create-oauth_refresh_token-table-v1.0.sql] cannot be resolved to URL because it does not exist
+	at liquibase.changelog.DatabaseChangeLog.handleChildNode(DatabaseChangeLog.java:356) ~[liquibase-core-3.8.9.jar:na]
+	at liquibase.changelog.DatabaseChangeLog.load(DatabaseChangeLog.java:305) ~[liquibase-core-3.8.9.jar:na]
+	at liquibase.parser.core.xml.AbstractChangeLogParser.parse(AbstractChangeLogParser.java:23) ~[liquibase-core-3.8.9.jar:na]
+	... 26 common frames omitted
+Caused by: liquibase.exception.ChangeLogParseException: java.io.FileNotFoundException: class path resource [db/changelog/create-oauth_refresh_token-table-v1.0.sql] cannot be resolved to URL because it does not exist
+	at liquibase.parser.core.sql.SqlChangeLogParser.parse(SqlChangeLogParser.java:44) ~[liquibase-core-3.8.9.jar:na]
+	at liquibase.changelog.DatabaseChangeLog.include(DatabaseChangeLog.java:565) ~[liquibase-core-3.8.9.jar:na]
+	at liquibase.changelog.DatabaseChangeLog.handleChildNode(DatabaseChangeLog.java:348) ~[liquibase-core-3.8.9.jar:na]
+	... 28 common frames omitted
+Caused by: java.io.FileNotFoundException: class path resource [db/changelog/create-oauth_refresh_token-table-v1.0.sql] cannot be resolved to URL because it does not exist
+	at org.springframework.core.io.ClassPathResource.getURL(ClassPathResource.java:195) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at liquibase.integration.spring.SpringLiquibase$SpringResourceOpener.getResourcesAsStream(SpringLiquibase.java:613) ~[liquibase-core-3.8.9.jar:na]
+	at liquibase.util.StreamUtil.singleInputStream(StreamUtil.java:186) ~[liquibase-core-3.8.9.jar:na]
+	at liquibase.parser.core.sql.SqlChangeLogParser.parse(SqlChangeLogParser.java:37) ~[liquibase-core-3.8.9.jar:na]
+	... 30 common frames omitted
+
+2020-08-14 19:26:54.873  INFO [Authorization Server,,,] 11414 --- [main] c.epam.authserver.AuthserverApplication  : No active profile set, falling back to default profiles: default
+2020-08-14 19:26:55.729  INFO [Authorization Server,,,] 11414 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-14 19:26:55.799  INFO [Authorization Server,,,] 11414 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55ms. Found 1 JPA repository interfaces.
+2020-08-14 19:26:55.898  WARN [Authorization Server,,,] 11414 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-08-14 19:26:56.145  INFO [Authorization Server,,,] 11414 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a2433c19-97b6-3dec-8c2a-4ca9e1bf9a61
+2020-08-14 19:26:56.637  INFO [Authorization Server,,,] 11414 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8383 (http)
+2020-08-14 19:26:56.645  INFO [Authorization Server,,,] 11414 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-14 19:26:56.646  INFO [Authorization Server,,,] 11414 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-14 19:26:56.746  INFO [Authorization Server,,,] 11414 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-14 19:26:56.747  INFO [Authorization Server,,,] 11414 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1855 ms
+2020-08-14 19:26:56.884  WARN [Authorization Server,,,] 11414 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-08-14 19:26:56.884  INFO [Authorization Server,,,] 11414 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-14 19:26:56.892  INFO [Authorization Server,,,] 11414 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@6eded11a
+2020-08-14 19:26:57.831  INFO [Authorization Server,,,] 11414 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-14 19:26:58.116  INFO [Authorization Server,,,] 11414 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-14 19:26:58.728  INFO [Authorization Server,,,] 11414 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM AuthServerDB.DATABASECHANGELOGLOCK
+2020-08-14 19:26:58.736  INFO [Authorization Server,,,] 11414 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM AuthServerDB.DATABASECHANGELOGLOCK
+2020-08-14 19:26:58.742  INFO [Authorization Server,,,] 11414 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT `LOCKED` FROM AuthServerDB.DATABASECHANGELOGLOCK WHERE ID=1
+2020-08-14 19:26:58.758  INFO [Authorization Server,,,] 11414 --- [main] l.lockservice.StandardLockService        : Successfully acquired change log lock
+2020-08-14 19:26:59.921  INFO [Authorization Server,,,] 11414 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT MD5SUM FROM AuthServerDB.DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+2020-08-14 19:26:59.923  INFO [Authorization Server,,,] 11414 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM AuthServerDB.DATABASECHANGELOG
+2020-08-14 19:26:59.927  INFO [Authorization Server,,,] 11414 --- [main] l.c.StandardChangeLogHistoryService      : Reading from AuthServerDB.DATABASECHANGELOG
+2020-08-14 19:26:59.928  INFO [Authorization Server,,,] 11414 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM AuthServerDB.DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2020-08-14 19:26:59.940  INFO [Authorization Server,,,] 11414 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE IF NOT EXISTS oauth_access_token (
+  token_id VARCHAR(256),
+  token LONG VARBINARY,
+  authentication_id VARCHAR(256) PRIMARY KEY,
+  user_name VARCHAR(256),
+  client_id VARCHAR(256),
+  authentication LONG VARBINARY,
+  refresh_token VARCHAR(256)
+)
+2020-08-14 19:26:59.978  INFO [Authorization Server,,,] 11414 --- [main] liquibase.changelog.ChangeSet            : Custom SQL executed
+2020-08-14 19:26:59.979  INFO [Authorization Server,,,] 11414 --- [main] liquibase.changelog.ChangeSet            : ChangeSet db/changelog/create-oauth_access_token-table-v1.0.sql::create-oauth_access_token-table::Jitender ran successfully in 43ms
+2020-08-14 19:26:59.980  INFO [Authorization Server,,,] 11414 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT MAX(ORDEREXECUTED) FROM AuthServerDB.DATABASECHANGELOG
+2020-08-14 19:26:59.982  INFO [Authorization Server,,,] 11414 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO AuthServerDB.DATABASECHANGELOG (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, `DESCRIPTION`, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('create-oauth_access_token-table', 'Jitender', 'db/changelog/create-oauth_access_token-table-v1.0.sql', NOW(), 12, '8:ae6e4c4b0a3b447cae25383cc2e22220', 'sql', '', 'EXECUTED', NULL, NULL, '3.8.9', '7413419932')
+2020-08-14 19:26:59.994  INFO [Authorization Server,,,] 11414 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE IF NOT EXISTS oauth_approvals (
+	userId VARCHAR(256),
+	clientId VARCHAR(256),
+	scope VARCHAR(256),
+	status VARCHAR(10),
+	expiresAt TIMESTAMP,
+	lastModifiedAt TIMESTAMP
+)
+2020-08-14 19:27:00.019  INFO [Authorization Server,,,] 11414 --- [main] liquibase.changelog.ChangeSet            : Custom SQL executed
+2020-08-14 19:27:00.021  INFO [Authorization Server,,,] 11414 --- [main] liquibase.changelog.ChangeSet            : ChangeSet db/changelog/create-oauth_approvals-table-v1.0.sql::create-oauth_code-table::Jitender ran successfully in 29ms
+2020-08-14 19:27:00.022  INFO [Authorization Server,,,] 11414 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO AuthServerDB.DATABASECHANGELOG (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, `DESCRIPTION`, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('create-oauth_code-table', 'Jitender', 'db/changelog/create-oauth_approvals-table-v1.0.sql', NOW(), 13, '8:52e3b99f86afb17e4a230579ad789f08', 'sql', '', 'EXECUTED', NULL, NULL, '3.8.9', '7413419932')
+2020-08-14 19:27:00.039  INFO [Authorization Server,,,] 11414 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE IF NOT EXISTS oauth_client_token (
+  token_id VARCHAR(256),
+  token LONG VARBINARY,
+  authentication_id VARCHAR(256) PRIMARY KEY,
+  user_name VARCHAR(256),
+  client_id VARCHAR(256)
+)
+2020-08-14 19:27:00.076  INFO [Authorization Server,,,] 11414 --- [main] liquibase.changelog.ChangeSet            : Custom SQL executed
+2020-08-14 19:27:00.078  INFO [Authorization Server,,,] 11414 --- [main] liquibase.changelog.ChangeSet            : ChangeSet db/changelog/create-oauth_client_token-table-v1.0.sql::create-oauth_client_token-table::Jitender ran successfully in 43ms
+2020-08-14 19:27:00.078  INFO [Authorization Server,,,] 11414 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO AuthServerDB.DATABASECHANGELOG (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, `DESCRIPTION`, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('create-oauth_client_token-table', 'Jitender', 'db/changelog/create-oauth_client_token-table-v1.0.sql', NOW(), 14, '8:01e193460593d783b2cab111606a16af', 'sql', '', 'EXECUTED', NULL, NULL, '3.8.9', '7413419932')
+2020-08-14 19:27:00.098  INFO [Authorization Server,,,] 11414 --- [main] liquibase.executor.jvm.JdbcExecutor      : create table if not exists oauth_code (
+  code VARCHAR(256), authentication LONG VARBINARY
+)
+2020-08-14 19:27:00.148  INFO [Authorization Server,,,] 11414 --- [main] liquibase.changelog.ChangeSet            : Custom SQL executed
+2020-08-14 19:27:00.150  INFO [Authorization Server,,,] 11414 --- [main] liquibase.changelog.ChangeSet            : ChangeSet db/changelog/create-oauth_code-table-v1.0.sql::create-oauth_code-table::Jitender ran successfully in 59ms
+2020-08-14 19:27:00.151  INFO [Authorization Server,,,] 11414 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO AuthServerDB.DATABASECHANGELOG (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, `DESCRIPTION`, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('create-oauth_code-table', 'Jitender', 'db/changelog/create-oauth_code-table-v1.0.sql', NOW(), 15, '8:d7c95954b36168aafb514282e6af0f58', 'sql', '', 'EXECUTED', NULL, NULL, '3.8.9', '7413419932')
+2020-08-14 19:27:00.171  INFO [Authorization Server,,,] 11414 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE IF NOT EXISTS oauth_refresh_token (
+  token_id VARCHAR(256),
+  token LONG VARBINARY,
+  authentication LONG VARBINARY
+)
+2020-08-14 19:27:00.209  INFO [Authorization Server,,,] 11414 --- [main] liquibase.changelog.ChangeSet            : Custom SQL executed
+2020-08-14 19:27:00.212  INFO [Authorization Server,,,] 11414 --- [main] liquibase.changelog.ChangeSet            : ChangeSet db/changelog/create-oauth_refresh_token-table-v1.0.sql::create-oauth_access_token-table::Jitender ran successfully in 45ms
+2020-08-14 19:27:00.213  INFO [Authorization Server,,,] 11414 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO AuthServerDB.DATABASECHANGELOG (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, `DESCRIPTION`, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('create-oauth_access_token-table', 'Jitender', 'db/changelog/create-oauth_refresh_token-table-v1.0.sql', NOW(), 16, '8:f379ac0400276b97d8801a05f4744a4d', 'sql', '', 'EXECUTED', NULL, NULL, '3.8.9', '7413419932')
+2020-08-14 19:27:00.241  INFO [Authorization Server,,,] 11414 --- [main] l.lockservice.StandardLockService        : Successfully released change log lock
+2020-08-14 19:27:00.313  INFO [Authorization Server,,,] 11414 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-14 19:27:00.375  INFO [Authorization Server,,,] 11414 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-14 19:27:00.458  INFO [Authorization Server,,,] 11414 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.20.Final
+2020-08-14 19:27:00.474  WARN [Authorization Server,,,] 11414 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-14 19:27:00.567  INFO [Authorization Server,,,] 11414 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-14 19:27:00.656  INFO [Authorization Server,,,] 11414 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-08-14 19:27:00.660  WARN [Authorization Server,,,] 11414 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-08-14 19:27:00.660  INFO [Authorization Server,,,] 11414 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-14 19:27:01.154  INFO [Authorization Server,,,] 11414 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-14 19:27:01.160  INFO [Authorization Server,,,] 11414 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-14 19:27:01.467  INFO [Authorization Server,,,] 11414 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2a01bf0e, org.springframework.security.web.context.SecurityContextPersistenceFilter@63369b91, org.springframework.security.web.header.HeaderWriterFilter@32b03ec1, org.springframework.security.web.authentication.logout.LogoutFilter@1efe7598, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@349f3582, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@77bd9821, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@143ad42d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@101d33a7, org.springframework.security.web.session.SessionManagementFilter@78f4be94, org.springframework.security.web.access.ExceptionTranslationFilter@331ad1ee, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@266b1bd9]
+2020-08-14 19:27:01.483  INFO [Authorization Server,,,] 11414 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@61cc39f8, org.springframework.security.web.context.SecurityContextPersistenceFilter@766e7a0f, org.springframework.security.web.header.HeaderWriterFilter@12a7999, org.springframework.security.web.csrf.CsrfFilter@72c2d699, org.springframework.security.web.authentication.logout.LogoutFilter@255130e3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@27330f99, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2f8c59d7, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@fbba04a, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1277c623, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3496e06a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6622a1d0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2691ebbe, org.springframework.security.web.session.SessionManagementFilter@257d8340, org.springframework.security.web.access.ExceptionTranslationFilter@16ca9e06, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2cf3882d]
+2020-08-14 19:27:01.622  WARN [Authorization Server,,,] 11414 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-08-14 19:27:01.750  WARN [Authorization Server,,,] 11414 --- [main] s.o.SpringCloudSecurityAutoConfiguration : All Spring Cloud Security modules and starters are deprecated. They will be moved to individual projects in the next major release.
+2020-08-14 19:27:01.826  INFO [Authorization Server,,,] 11414 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-14 19:27:01.910  INFO [Authorization Server,,,] 11414 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-08-14 19:27:01.942  INFO [Authorization Server,,,] 11414 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-08-14 19:27:02.004  INFO [Authorization Server,,,] 11414 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-08-14 19:27:02.005  INFO [Authorization Server,,,] 11414 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-08-14 19:27:02.132  INFO [Authorization Server,,,] 11414 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-08-14 19:27:02.132  INFO [Authorization Server,,,] 11414 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-08-14 19:27:02.270  INFO [Authorization Server,,,] 11414 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-14 19:27:02.301  INFO [Authorization Server,,,] 11414 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-08-14 19:27:02.301  INFO [Authorization Server,,,] 11414 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-08-14 19:27:02.301  INFO [Authorization Server,,,] 11414 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-08-14 19:27:02.301  INFO [Authorization Server,,,] 11414 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-08-14 19:27:02.302  INFO [Authorization Server,,,] 11414 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-08-14 19:27:02.302  INFO [Authorization Server,,,] 11414 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-08-14 19:27:02.302  INFO [Authorization Server,,,] 11414 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-08-14 19:27:02.427  INFO [Authorization Server,,,] 11414 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-08-14 19:27:02.429  INFO [Authorization Server,,,] 11414 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-08-14 19:27:02.430  INFO [Authorization Server,,,] 11414 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-08-14 19:27:02.432  INFO [Authorization Server,,,] 11414 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1597413422432 with initial instances count: 1
+2020-08-14 19:27:02.439  INFO [Authorization Server,,,] 11414 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application AUTHORIZATION SERVER with eureka with status UP
+2020-08-14 19:27:02.439  INFO [Authorization Server,,,] 11414 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1597413422439, current=UP, previous=STARTING]
+2020-08-14 19:27:02.440  INFO [Authorization Server,,,] 11414 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTHORIZATION SERVER/192.168.0.4:Authorization Server:8383: registering service...
+2020-08-14 19:27:02.457  INFO [Authorization Server,,,] 11414 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8383 (http) with context path ''
+2020-08-14 19:27:02.458  INFO [Authorization Server,,,] 11414 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8383
+2020-08-14 19:27:02.461  INFO [Authorization Server,,,] 11414 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-08-14 19:27:02.461  INFO [Authorization Server,,,] 11414 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTHORIZATION SERVER/192.168.0.4:Authorization Server:8383 - registration status: 204
+2020-08-14 19:27:02.788  INFO [Authorization Server,,,] 11414 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-08-14 19:27:02.812  INFO [Authorization Server,,,] 11414 --- [main] c.epam.authserver.AuthserverApplication  : Started AuthserverApplication in 9.036 seconds (JVM running for 14.61)
+2020-08-14 19:27:19.156  INFO [Authorization Server,,,] 11414 --- [http-nio-8383-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-14 19:27:19.156  INFO [Authorization Server,,,] 11414 --- [http-nio-8383-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-14 19:27:19.171  INFO [Authorization Server,,,] 11414 --- [http-nio-8383-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2020-08-14 19:27:20.606  INFO [Authorization Server,0dc0902508f8d3a8,0dc0902508f8d3a8,true] 11414 --- [http-nio-8383-exec-2] o.s.s.o.p.token.store.JdbcTokenStore     : Failed to find access token for token d2a0aad5-4678-4d30-a7af-b2323fa2d7c3
+2020-08-14 19:29:05.848  INFO [Authorization Server,,,] 11414 --- [SpringContextShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application AUTHORIZATION SERVER with eureka with status DOWN
+2020-08-14 19:29:05.849  WARN [Authorization Server,,,] 11414 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1597413545849, current=DOWN, previous=UP]
+2020-08-14 19:29:05.849  INFO [Authorization Server,,,] 11414 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTHORIZATION SERVER/192.168.0.4:Authorization Server:8383: registering service...
+2020-08-14 19:29:05.853  INFO [Authorization Server,,,] 11414 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTHORIZATION SERVER/192.168.0.4:Authorization Server:8383 - registration status: 204
+2020-08-14 19:29:05.874  INFO [Authorization Server,,,] 11414 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-14 19:29:05.877  INFO [Authorization Server,,,] 11414 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-14 19:29:05.880  INFO [Authorization Server,,,] 11414 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-14 19:29:05.918  INFO [Authorization Server,,,] 11414 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-14 19:29:05.979  INFO [Authorization Server,,,] 11414 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2020-08-14 19:29:08.985  INFO [Authorization Server,,,] 11414 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2020-08-14 19:29:08.990  INFO [Authorization Server,,,] 11414 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTHORIZATION SERVER/192.168.0.4:Authorization Server:8383 - deregister  status: 200
+2020-08-14 19:29:09.000  INFO [Authorization Server,,,] 11414 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2020-08-14 19:29:18.312  INFO [Authorization Server,,,] 11451 --- [main] c.epam.authserver.AuthserverApplication  : No active profile set, falling back to default profiles: default
+2020-08-14 19:29:19.144  INFO [Authorization Server,,,] 11451 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-14 19:29:19.212  INFO [Authorization Server,,,] 11451 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61ms. Found 1 JPA repository interfaces.
+2020-08-14 19:29:19.300  WARN [Authorization Server,,,] 11451 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-08-14 19:29:19.539  INFO [Authorization Server,,,] 11451 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a2433c19-97b6-3dec-8c2a-4ca9e1bf9a61
+2020-08-14 19:29:20.062  INFO [Authorization Server,,,] 11451 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8383 (http)
+2020-08-14 19:29:20.069  INFO [Authorization Server,,,] 11451 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-14 19:29:20.069  INFO [Authorization Server,,,] 11451 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-14 19:29:20.171  INFO [Authorization Server,,,] 11451 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-14 19:29:20.171  INFO [Authorization Server,,,] 11451 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1843 ms
+2020-08-14 19:29:20.313  WARN [Authorization Server,,,] 11451 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-08-14 19:29:20.313  INFO [Authorization Server,,,] 11451 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-14 19:29:20.322  INFO [Authorization Server,,,] 11451 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@6a7aa675
+2020-08-14 19:29:21.239  INFO [Authorization Server,,,] 11451 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-14 19:29:21.537  INFO [Authorization Server,,,] 11451 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-14 19:29:22.098  INFO [Authorization Server,,,] 11451 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM AuthServerDB.DATABASECHANGELOGLOCK
+2020-08-14 19:29:22.106  INFO [Authorization Server,,,] 11451 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM AuthServerDB.DATABASECHANGELOGLOCK
+2020-08-14 19:29:22.110  INFO [Authorization Server,,,] 11451 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT `LOCKED` FROM AuthServerDB.DATABASECHANGELOGLOCK WHERE ID=1
+2020-08-14 19:29:22.128  INFO [Authorization Server,,,] 11451 --- [main] l.lockservice.StandardLockService        : Successfully acquired change log lock
+2020-08-14 19:29:23.274  INFO [Authorization Server,,,] 11451 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT MD5SUM FROM AuthServerDB.DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+2020-08-14 19:29:23.277  INFO [Authorization Server,,,] 11451 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM AuthServerDB.DATABASECHANGELOG
+2020-08-14 19:29:23.281  INFO [Authorization Server,,,] 11451 --- [main] l.c.StandardChangeLogHistoryService      : Reading from AuthServerDB.DATABASECHANGELOG
+2020-08-14 19:29:23.281  INFO [Authorization Server,,,] 11451 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM AuthServerDB.DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2020-08-14 19:29:23.296  INFO [Authorization Server,,,] 11451 --- [main] l.lockservice.StandardLockService        : Successfully released change log lock
+2020-08-14 19:29:23.352  INFO [Authorization Server,,,] 11451 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-14 19:29:23.421  INFO [Authorization Server,,,] 11451 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-14 19:29:23.490  INFO [Authorization Server,,,] 11451 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.20.Final
+2020-08-14 19:29:23.510  WARN [Authorization Server,,,] 11451 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-14 19:29:23.599  INFO [Authorization Server,,,] 11451 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-14 19:29:23.671  INFO [Authorization Server,,,] 11451 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-08-14 19:29:23.696  WARN [Authorization Server,,,] 11451 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-08-14 19:29:23.697  INFO [Authorization Server,,,] 11451 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-14 19:29:24.194  INFO [Authorization Server,,,] 11451 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-14 19:29:24.201  INFO [Authorization Server,,,] 11451 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-14 19:29:24.514  INFO [Authorization Server,,,] 11451 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@740224cc, org.springframework.security.web.context.SecurityContextPersistenceFilter@7827b580, org.springframework.security.web.header.HeaderWriterFilter@2eeb14d4, org.springframework.security.web.authentication.logout.LogoutFilter@577269f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2fcad999, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@c3bd1bb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6a3a236f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@731f9b6b, org.springframework.security.web.session.SessionManagementFilter@51421b7d, org.springframework.security.web.access.ExceptionTranslationFilter@7eaa3a93, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@9d518ef]
+2020-08-14 19:29:24.532  INFO [Authorization Server,,,] 11451 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@766e7a0f, org.springframework.security.web.context.SecurityContextPersistenceFilter@62aea363, org.springframework.security.web.header.HeaderWriterFilter@3c090ae5, org.springframework.security.web.csrf.CsrfFilter@5a5c0f56, org.springframework.security.web.authentication.logout.LogoutFilter@3bdb3f28, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@622a4589, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6f0efd55, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3496e06a, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@257d8340, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@390c96a1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4da6fd47, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6622a1d0, org.springframework.security.web.session.SessionManagementFilter@1b572ba5, org.springframework.security.web.access.ExceptionTranslationFilter@24bff8d7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@69063972]
+2020-08-14 19:29:24.663  WARN [Authorization Server,,,] 11451 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-08-14 19:29:24.787  WARN [Authorization Server,,,] 11451 --- [main] s.o.SpringCloudSecurityAutoConfiguration : All Spring Cloud Security modules and starters are deprecated. They will be moved to individual projects in the next major release.
+2020-08-14 19:29:24.860  INFO [Authorization Server,,,] 11451 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-14 19:29:24.943  INFO [Authorization Server,,,] 11451 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-08-14 19:29:24.976  INFO [Authorization Server,,,] 11451 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-08-14 19:29:25.036  INFO [Authorization Server,,,] 11451 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-08-14 19:29:25.036  INFO [Authorization Server,,,] 11451 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-08-14 19:29:25.170  INFO [Authorization Server,,,] 11451 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-08-14 19:29:25.170  INFO [Authorization Server,,,] 11451 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-08-14 19:29:25.327  INFO [Authorization Server,,,] 11451 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-14 19:29:25.350  INFO [Authorization Server,,,] 11451 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-08-14 19:29:25.351  INFO [Authorization Server,,,] 11451 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-08-14 19:29:25.351  INFO [Authorization Server,,,] 11451 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-08-14 19:29:25.351  INFO [Authorization Server,,,] 11451 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-08-14 19:29:25.351  INFO [Authorization Server,,,] 11451 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-08-14 19:29:25.351  INFO [Authorization Server,,,] 11451 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-08-14 19:29:25.351  INFO [Authorization Server,,,] 11451 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-08-14 19:29:25.492  INFO [Authorization Server,,,] 11451 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-08-14 19:29:25.494  INFO [Authorization Server,,,] 11451 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-08-14 19:29:25.496  INFO [Authorization Server,,,] 11451 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-08-14 19:29:25.498  INFO [Authorization Server,,,] 11451 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1597413565498 with initial instances count: 1
+2020-08-14 19:29:25.506  INFO [Authorization Server,,,] 11451 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application AUTHORIZATION SERVER with eureka with status UP
+2020-08-14 19:29:25.507  INFO [Authorization Server,,,] 11451 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1597413565507, current=UP, previous=STARTING]
+2020-08-14 19:29:25.508  INFO [Authorization Server,,,] 11451 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTHORIZATION SERVER/192.168.0.4:Authorization Server:8383: registering service...
+2020-08-14 19:29:25.528  INFO [Authorization Server,,,] 11451 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8383 (http) with context path ''
+2020-08-14 19:29:25.529  INFO [Authorization Server,,,] 11451 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8383
+2020-08-14 19:29:25.531  INFO [Authorization Server,,,] 11451 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTHORIZATION SERVER/192.168.0.4:Authorization Server:8383 - registration status: 204
+2020-08-14 19:29:25.533  INFO [Authorization Server,,,] 11451 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-08-14 19:29:25.846  INFO [Authorization Server,,,] 11451 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-08-14 19:29:25.870  INFO [Authorization Server,,,] 11451 --- [main] c.epam.authserver.AuthserverApplication  : Started AuthserverApplication in 8.687 seconds (JVM running for 14.204)
+2020-08-14 19:29:55.635  INFO [Authorization Server,,,] 11451 --- [http-nio-8383-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-14 19:29:55.639  INFO [Authorization Server,,,] 11451 --- [http-nio-8383-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-14 19:29:55.657  INFO [Authorization Server,,,] 11451 --- [http-nio-8383-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
+2020-08-14 19:31:39.991  INFO [Authorization Server,,,] 11451 --- [SpringContextShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application AUTHORIZATION SERVER with eureka with status DOWN
+2020-08-14 19:31:39.993  WARN [Authorization Server,,,] 11451 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1597413699993, current=DOWN, previous=UP]
+2020-08-14 19:31:39.993  INFO [Authorization Server,,,] 11451 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTHORIZATION SERVER/192.168.0.4:Authorization Server:8383: registering service...
+2020-08-14 19:31:39.998  INFO [Authorization Server,,,] 11451 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTHORIZATION SERVER/192.168.0.4:Authorization Server:8383 - registration status: 204
+2020-08-14 19:31:40.032  INFO [Authorization Server,,,] 11451 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-14 19:31:40.036  INFO [Authorization Server,,,] 11451 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-14 19:31:40.037  INFO [Authorization Server,,,] 11451 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-14 19:31:40.065  INFO [Authorization Server,,,] 11451 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-14 19:31:40.722  INFO [Authorization Server,,,] 11451 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2020-08-14 19:31:43.725  INFO [Authorization Server,,,] 11451 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2020-08-14 19:31:43.729  INFO [Authorization Server,,,] 11451 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTHORIZATION SERVER/192.168.0.4:Authorization Server:8383 - deregister  status: 200
+2020-08-14 19:31:43.739  INFO [Authorization Server,,,] 11451 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2020-08-14 19:31:54.468  INFO [Authorization Server,,,] 11569 --- [main] c.epam.authserver.AuthserverApplication  : No active profile set, falling back to default profiles: default
+2020-08-14 19:31:55.317  INFO [Authorization Server,,,] 11569 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-08-14 19:31:55.376  INFO [Authorization Server,,,] 11569 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53ms. Found 1 JPA repository interfaces.
+2020-08-14 19:31:55.496  WARN [Authorization Server,,,] 11569 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-08-14 19:31:55.718  INFO [Authorization Server,,,] 11569 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a2433c19-97b6-3dec-8c2a-4ca9e1bf9a61
+2020-08-14 19:31:56.264  INFO [Authorization Server,,,] 11569 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8383 (http)
+2020-08-14 19:31:56.271  INFO [Authorization Server,,,] 11569 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-14 19:31:56.271  INFO [Authorization Server,,,] 11569 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-14 19:31:56.375  INFO [Authorization Server,,,] 11569 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-08-14 19:31:56.376  INFO [Authorization Server,,,] 11569 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1891 ms
+2020-08-14 19:31:56.519  WARN [Authorization Server,,,] 11569 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-08-14 19:31:56.520  INFO [Authorization Server,,,] 11569 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-14 19:31:56.527  INFO [Authorization Server,,,] 11569 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@6eded11a
+2020-08-14 19:31:57.457  INFO [Authorization Server,,,] 11569 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-14 19:31:57.724  INFO [Authorization Server,,,] 11569 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-14 19:31:58.325  INFO [Authorization Server,,,] 11569 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM AuthServerDB.DATABASECHANGELOGLOCK
+2020-08-14 19:31:58.334  INFO [Authorization Server,,,] 11569 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM AuthServerDB.DATABASECHANGELOGLOCK
+2020-08-14 19:31:58.339  INFO [Authorization Server,,,] 11569 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT `LOCKED` FROM AuthServerDB.DATABASECHANGELOGLOCK WHERE ID=1
+2020-08-14 19:31:58.354  INFO [Authorization Server,,,] 11569 --- [main] l.lockservice.StandardLockService        : Successfully acquired change log lock
+2020-08-14 19:31:59.650  INFO [Authorization Server,,,] 11569 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT MD5SUM FROM AuthServerDB.DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+2020-08-14 19:31:59.654  INFO [Authorization Server,,,] 11569 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM AuthServerDB.DATABASECHANGELOG
+2020-08-14 19:31:59.657  INFO [Authorization Server,,,] 11569 --- [main] l.c.StandardChangeLogHistoryService      : Reading from AuthServerDB.DATABASECHANGELOG
+2020-08-14 19:31:59.658  INFO [Authorization Server,,,] 11569 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM AuthServerDB.DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2020-08-14 19:31:59.680  INFO [Authorization Server,,,] 11569 --- [main] l.lockservice.StandardLockService        : Successfully released change log lock
+2020-08-14 19:31:59.754  INFO [Authorization Server,,,] 11569 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-14 19:31:59.811  INFO [Authorization Server,,,] 11569 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-14 19:31:59.867  INFO [Authorization Server,,,] 11569 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.20.Final
+2020-08-14 19:31:59.873  WARN [Authorization Server,,,] 11569 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-08-14 19:31:59.996  INFO [Authorization Server,,,] 11569 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-14 19:32:00.094  INFO [Authorization Server,,,] 11569 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-08-14 19:32:00.127  WARN [Authorization Server,,,] 11569 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-08-14 19:32:00.127  INFO [Authorization Server,,,] 11569 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-14 19:32:00.740  INFO [Authorization Server,,,] 11569 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-14 19:32:00.755  INFO [Authorization Server,,,] 11569 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-14 19:32:01.254  INFO [Authorization Server,,,] 11569 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@178f5ab1, org.springframework.security.web.context.SecurityContextPersistenceFilter@7c4eecfc, org.springframework.security.web.header.HeaderWriterFilter@791fc5c3, org.springframework.security.web.authentication.logout.LogoutFilter@fff7d5f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6ac4da08, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@78f4be94, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@161c4d43, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@71d47c80, org.springframework.security.web.session.SessionManagementFilter@5d585ca0, org.springframework.security.web.access.ExceptionTranslationFilter@247d6992, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@486b35d5]
+2020-08-14 19:32:01.278  INFO [Authorization Server,,,] 11569 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@29a1c0b7, org.springframework.security.web.context.SecurityContextPersistenceFilter@25c8d646, org.springframework.security.web.header.HeaderWriterFilter@6f0efd55, org.springframework.security.web.csrf.CsrfFilter@24bff8d7, org.springframework.security.web.authentication.logout.LogoutFilter@622a4589, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@65782175, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@58c2a890, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5a7ec872, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2a37e02b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5ffe5b7d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4782e182, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1771700b, org.springframework.security.web.session.SessionManagementFilter@78acee6c, org.springframework.security.web.access.ExceptionTranslationFilter@4da6fd47, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1a61a2c4]
+2020-08-14 19:32:01.432  WARN [Authorization Server,,,] 11569 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-08-14 19:32:01.557  WARN [Authorization Server,,,] 11569 --- [main] s.o.SpringCloudSecurityAutoConfiguration : All Spring Cloud Security modules and starters are deprecated. They will be moved to individual projects in the next major release.
+2020-08-14 19:32:01.631  INFO [Authorization Server,,,] 11569 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-14 19:32:01.721  INFO [Authorization Server,,,] 11569 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-08-14 19:32:01.758  INFO [Authorization Server,,,] 11569 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-08-14 19:32:01.814  INFO [Authorization Server,,,] 11569 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-08-14 19:32:01.814  INFO [Authorization Server,,,] 11569 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-08-14 19:32:01.974  INFO [Authorization Server,,,] 11569 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-08-14 19:32:01.975  INFO [Authorization Server,,,] 11569 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-08-14 19:32:02.132  INFO [Authorization Server,,,] 11569 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-08-14 19:32:02.150  INFO [Authorization Server,,,] 11569 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-08-14 19:32:02.150  INFO [Authorization Server,,,] 11569 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-08-14 19:32:02.151  INFO [Authorization Server,,,] 11569 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-08-14 19:32:02.151  INFO [Authorization Server,,,] 11569 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-08-14 19:32:02.151  INFO [Authorization Server,,,] 11569 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-08-14 19:32:02.151  INFO [Authorization Server,,,] 11569 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-08-14 19:32:02.151  INFO [Authorization Server,,,] 11569 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-08-14 19:32:02.366  INFO [Authorization Server,,,] 11569 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-08-14 19:32:02.369  INFO [Authorization Server,,,] 11569 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-08-14 19:32:02.371  INFO [Authorization Server,,,] 11569 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-08-14 19:32:02.375  INFO [Authorization Server,,,] 11569 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1597413722374 with initial instances count: 1
+2020-08-14 19:32:02.385  INFO [Authorization Server,,,] 11569 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application AUTHORIZATION SERVER with eureka with status UP
+2020-08-14 19:32:02.386  INFO [Authorization Server,,,] 11569 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1597413722386, current=UP, previous=STARTING]
+2020-08-14 19:32:02.387  INFO [Authorization Server,,,] 11569 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTHORIZATION SERVER/192.168.0.4:Authorization Server:8383: registering service...
+2020-08-14 19:32:02.425  INFO [Authorization Server,,,] 11569 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTHORIZATION SERVER/192.168.0.4:Authorization Server:8383 - registration status: 204
+2020-08-14 19:32:02.425  INFO [Authorization Server,,,] 11569 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8383 (http) with context path ''
+2020-08-14 19:32:02.426  INFO [Authorization Server,,,] 11569 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8383
+2020-08-14 19:32:02.432  INFO [Authorization Server,,,] 11569 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-08-14 19:32:02.936  INFO [Authorization Server,,,] 11569 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-08-14 19:32:02.987  INFO [Authorization Server,,,] 11569 --- [main] c.epam.authserver.AuthserverApplication  : Started AuthserverApplication in 9.736 seconds (JVM running for 15.285)
+2020-08-14 19:32:33.371  INFO [Authorization Server,,,] 11569 --- [http-nio-8383-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-14 19:32:33.372  INFO [Authorization Server,,,] 11569 --- [http-nio-8383-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-14 19:32:33.389  INFO [Authorization Server,,,] 11569 --- [http-nio-8383-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+2020-08-14 19:32:34.818  INFO [Authorization Server,01ac41e959627ab3,01ac41e959627ab3,true] 11569 --- [http-nio-8383-exec-1] o.s.s.o.p.token.store.JdbcTokenStore     : Failed to find access token for token 62ee378a-46c6-47c9-bc71-559f8a7bba06

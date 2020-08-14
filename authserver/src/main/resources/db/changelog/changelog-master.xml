@@ -10,6 +10,11 @@
     <include file="db/changelog/create-user-table-v1.0.sql"/>
     <include file="db/changelog/create-permission_role-table-v1.0.sql"/>
     <include file="db/changelog/create-user_role-table-v1.0.sql"/>
+    <include file="db/changelog/create-oauth_access_token-table-v1.0.sql"/>
+    <include file="db/changelog/create-oauth_approvals-table-v1.0.sql"/>
+    <include file="db/changelog/create-oauth_client_token-table-v1.0.sql"/>
+    <include file="db/changelog/create-oauth_code-table-v1.0.sql"/>
+    <include file="db/changelog/create-oauth_refresh_token-table-v1.0.sql"/>
 <!--    Insert Data in DB-->
     <include file="db/changelog/insert-into-oauth_client_detail-table-v1.0.sql"/>
     <include file="db/changelog/insert-into-permission_and_role-table-v1.0.sql"/>

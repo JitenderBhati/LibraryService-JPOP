@@ -1,0 +1,13 @@
+--liquibase formatted sql
+--changeset Jitender:create-oauth_code-table
+
+CREATE TABLE IF NOT EXISTS oauth_approvals (
+	userId VARCHAR(256),
+	clientId VARCHAR(256),
+	scope VARCHAR(256),
+	status VARCHAR(10),
+	expiresAt TIMESTAMP,
+	lastModifiedAt TIMESTAMP
+);
+
+--rollbcak DROP TABLE oauth_approvals
