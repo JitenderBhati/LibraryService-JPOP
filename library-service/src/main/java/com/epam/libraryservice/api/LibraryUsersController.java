@@ -2,6 +2,7 @@ package com.epam.libraryservice.api;
 
 import com.epam.libraryservice.pojo.LibraryInfo;
 import com.epam.libraryservice.pojo.UserInfo;
+import com.epam.libraryservice.provider.TokenProvider;
 import com.epam.libraryservice.proxies.BookServiceProxy;
 import com.epam.libraryservice.proxies.UserServiceProxy;
 import com.epam.libraryservice.service.LibraryService;
@@ -38,8 +39,8 @@ public class LibraryUsersController {
         var libraryData = this.libraryService.getUserBooks(user_id);
         List<LibraryInfo> allLibraryInfo = new ArrayList<>();
         libraryData.forEach(lib -> {
-            libraryInfo.setUserInfo(userServiceProxy.getUser(lib.getUser()));
-            libraryInfo.setBook(bookServiceProxy.getBook(lib.getBook()));
+            libraryInfo.setUserInfo(userServiceProxy.getUser(TokenProvider.getAccessToken(), lib.getUser()));
+            libraryInfo.setBook(bookServiceProxy.getBook(TokenProvider.getAccessToken(), lib.getBook()));
             libraryInfo.setId(lib.getId());
             libraryInfo.setIssueDate(lib.getIssuedate());
             libraryInfo.setReturnDate(lib.getReturndate());
@@ -50,24 +51,24 @@ public class LibraryUsersController {
 
     @GetMapping
     public ResponseEntity<List<UserInfo>> getAllUsers() {
-        return ResponseEntity.status(HttpStatus.OK).body(this.userServiceProxy.allUsers());
+        return ResponseEntity.status(HttpStatus.OK).body(this.userServiceProxy.allUsers(TokenProvider.getAccessToken()));
     }
 
     @PostMapping
     public ResponseEntity<UserInfo> addUser(@RequestBody final UserInfo user) {
-        return ResponseEntity.status(HttpStatus.CREATED).body(this.userServiceProxy.addUser(user));
+        return ResponseEntity.status(HttpStatus.CREATED).body(this.userServiceProxy.addUser(TokenProvider.getAccessToken(),user));
     }
 
     @PutMapping("{user_id}")
     public ResponseEntity<UserInfo> updateUser(@PathVariable(value = "user_id") final int userId,
                                                @RequestBody final UserInfo user) {
-        return ResponseEntity.status(HttpStatus.OK).body(this.userServiceProxy.updateUser(userId, user));
+        return ResponseEntity.status(HttpStatus.OK).body(this.userServiceProxy.updateUser(TokenProvider.getAccessToken(),userId, user));
     }
 
     @DeleteMapping("{user_id}")
     @PreAuthorize("hasRole('ROLE_admin')")
     public ResponseEntity<String> deleteUser(@PathVariable(value = "user_id") final int userId) {
         this.libraryService.deleteBookRecords(userId);
-        return ResponseEntity.status(HttpStatus.OK).body(this.userServiceProxy.deleteUser(userId));
+        return ResponseEntity.status(HttpStatus.OK).body(this.userServiceProxy.deleteUser(TokenProvider.getAccessToken(),userId));
     }
 }
