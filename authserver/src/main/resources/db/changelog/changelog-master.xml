@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+    <include file="db/changelog/create-oauth-client-details-table-v1.0.sql"/>
+    <include file="db/changelog/create-permission-table-v1.0.sql"/>
+    <include file="db/changelog/create-role-table-v1.0.sql"/>
+    <include file="db/changelog/create-user-table-v1.0.sql"/>
+    <include file="db/changelog/create-permission_role-table-v1.0.sql"/>
+    <include file="db/changelog/create-user_role-table-v1.0.sql"/>
+<!--    Insert Data in DB-->
+    <include file="db/changelog/insert-into-oauth_client_detail-table-v1.0.sql"/>
+    <include file="db/changelog/insert-into-permission_and_role-table-v1.0.sql"/>
+    <include file="db/changelog/insert-into-permission_role-table-v1.0.sql"/>
+    <include file="db/changelog/insert-into-user-table-v1.0.sql"/>
+    <include file="db/changelog/insert-into-user_role-table-v1.0.sql"/>
+</databaseChangeLog>
