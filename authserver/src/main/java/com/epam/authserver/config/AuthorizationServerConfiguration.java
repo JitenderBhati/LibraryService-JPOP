@@ -1,5 +1,6 @@
 package com.epam.authserver.config;
 
+import com.epam.authserver.service.UserPrincipalService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -16,17 +17,19 @@ import javax.sql.DataSource;
 @Configuration
 public class AuthorizationServerConfiguration implements AuthorizationServerConfigurer {
     private final DataSource dataSource;
-
     private final PasswordEncoder passwordEncoder;
     private final AuthenticationManager authenticationManager;
+    private final UserPrincipalService userPrincipalService;
 
     @Autowired
     public AuthorizationServerConfiguration(final DataSource dataSource,
                                             final PasswordEncoder passwordEncoder,
-                                            final AuthenticationManager authenticationManager) {
+                                            final AuthenticationManager authenticationManager,
+                                            final UserPrincipalService userPrincipalService) {
         this.dataSource = dataSource;
         this.passwordEncoder = passwordEncoder;
         this.authenticationManager = authenticationManager;
+        this.userPrincipalService = userPrincipalService;
     }
 
     @Override
@@ -41,8 +44,9 @@ public class AuthorizationServerConfiguration implements AuthorizationServerConf
 
     @Override
     public void configure(AuthorizationServerEndpointsConfigurer endpoint) throws Exception {
-        endpoint.tokenStore(this.getJdbcTokenStore());
-        endpoint.authenticationManager(authenticationManager);
+        endpoint.tokenStore(this.getJdbcTokenStore())
+                .authenticationManager(authenticationManager)
+                .userDetailsService(userPrincipalService);
     }
 
     @Bean

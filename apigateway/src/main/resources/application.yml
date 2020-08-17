@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: api-service
+
+server:
+  port: 8808
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+zuul:
+  sensitive-headers: Cookie,Set-Cookie
