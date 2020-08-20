@@ -1,0 +1,88 @@
+version: "3"
+services:
+  mySql:
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: admin
+    ports:
+      - 3306:3307
+
+  eureka-server:
+    build: ./eurekaserver
+    ports:
+      - 8761:8761
+
+  config-server:
+    build: ./config-server
+    restart: on-failure
+    ports:
+      - 8888:8888
+    environment:
+      EUREKA_HOST: eureka-server
+    depends_on:
+      - eureka-server
+
+  user-service:
+    build: ./user_service
+    restart: on-failure
+    environment:
+      CONFIG_HOST: config-server
+      EUREKA_HOST: eureka-server
+      DB_HOST: mySql
+      AUTH_SERVER: auth-server
+    ports:
+      - 8801:8801
+    depends_on:
+      - eureka-server
+      - config-server
+
+  auth-server:
+    build: ./authserver
+    restart: on-failure
+    environment:
+      CONFIG_HOST: config-server
+      EUREKA_HOST: eureka-server
+      DB_HOST: mySql
+    ports:
+      - 8383:8383
+    depends_on:
+      - eureka-server
+      - config-server
+
+  book-service:
+    build: ./Book Service
+    restart: on-failure
+    environment:
+      CONFIG_HOST: config-server
+      EUREKA_HOST: eureka-server
+      DB_HOST: mySql
+      AUTH_SERVER: auth-server
+    ports:
+      - 8080:8080
+    depends_on:
+      - eureka-server
+      - config-server
+
+  library-service:
+    build: ./library-service
+    restart: on-failure
+    environment:
+      CONFIG_HOST: config-server
+      EUREKA_HOST: eureka-server
+      DB_HOST: mySql
+      AUTH_SERVER: auth-server
+    ports:
+      - 8802:8802
+    depends_on:
+      - eureka-server
+      - config-server
+
+  api-gateway:
+    build: ./apigateway
+    restart: on-failure
+    environment:
+      EUREKA_HOST: eureka-server
+    ports:
+      - 8808:8808
+    depends_on:
+      - eureka-server
