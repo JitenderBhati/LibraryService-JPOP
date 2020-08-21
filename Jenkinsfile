@@ -6,7 +6,11 @@ node {
     
     sh 'java -version'
 
-    stage("clean workplace") {
+    stage("Docker Compose Down") {
+        sh label: '', script: 'docker-compose down'
+    }
+
+    stage("Clean Workspace") {
         cleanWs()
     }
 
@@ -34,8 +38,19 @@ node {
             stage('Build Artifact Stage') {
                 sh label: '', script: 'mvn install -DskipTests'
             }
-        }
-        
+
+            stage("Copy Artiface to Deployment Location") {
+                //sh 'cp -r target/* docker'
+            }
+
+            stage('build and push docker image') {
+                docker.withRegistry('https://index.docker.io/v1/', 'docker') {
+                def customImage = docker.build("jkrajput24/jpop-configServer:v-${env.BUILD_ID}")
+                /* Push the container to the custom Registry */
+                customImage.push()
+                }
+            }
+        }        
     }, eurekaServer: {
          dir('eurekaserver') {
              sh "pwd"
@@ -49,6 +64,14 @@ node {
 
             stage('Build Artifact Stage') {
                 sh label: '', script: 'mvn install -DskipTests'
+            }
+
+            stage('build and push docker image') {
+                docker.withRegistry('https://index.docker.io/v1/', 'docker') {
+                def customImage = docker.build("jkrajput24/jpop-eurekaServer:v-${env.BUILD_ID}")
+                /* Push the container to the custom Registry */
+                customImage.push()
+                }
             }
         }
     }, authServer: {
@@ -65,6 +88,14 @@ node {
             stage('Build Artifact Stage') {
                 sh label: '', script: 'mvn install -DskipTests'
             }
+
+            stage('build and push docker image') {
+                docker.withRegistry('https://index.docker.io/v1/', 'docker') {
+                def customImage = docker.build("jkrajput24/jpop-authServer:v-${env.BUILD_ID}")
+                /* Push the container to the custom Registry */
+                customImage.push()
+                }
+            }
         }
     }, apiGateway: {
          dir('apigateway') {
@@ -79,6 +110,14 @@ node {
 
             stage('Build Artifact Stage') {
                 sh label: '', script: 'mvn install -DskipTests'
+            }
+
+            stage('build and push docker image') {
+                docker.withRegistry('https://index.docker.io/v1/', 'docker') {
+                def customImage = docker.build("jkrajput24/jpop-apiGateway:v-${env.BUILD_ID}")
+                /* Push the container to the custom Registry */
+                customImage.push()
+                }
             }
         }
     }, bookService: {
@@ -95,6 +134,14 @@ node {
             stage('Build Artifact Stage') {
                 sh label: '', script: 'mvn install -DskipTests'
             }
+
+            stage('build and push docker image') {
+                docker.withRegistry('https://index.docker.io/v1/', 'docker') {
+                def customImage = docker.build("jkrajput24/jpop-bookService:v-${env.BUILD_ID}")
+                /* Push the container to the custom Registry */
+                customImage.push()
+                }
+            }
         }
     }, libraryService: {
          dir('library-service') {
@@ -110,12 +157,20 @@ node {
             stage('Build Artifact Stage') {
                 sh label: '', script: 'mvn install -DskipTests'
             }
+
+            stage('build and push docker image') {
+                docker.withRegistry('https://index.docker.io/v1/', 'docker') {
+                def customImage = docker.build("jkrajput24/jpop-libraryService:v-${env.BUILD_ID}")
+                /* Push the container to the custom Registry */
+                customImage.push()
+                }
+            }
         }
     }, userService: {
          dir('user_service') {
             sh "pwd"
             stage("Compile") {
-                sh label: '', script: 'mvn clean'
+                sh label: '', script: 'mvn compile'
             }
 
             stage("Test") {
@@ -125,7 +180,18 @@ node {
             stage('Build Artifact Stage') {
                 sh label: '', script: 'mvn install -DskipTests'
             }
+
+            stage('build and push docker image') {
+                docker.withRegistry('https://index.docker.io/v1/', 'docker') {
+                def customImage = docker.build("jkrajput24/jpop-userService:v-${env.BUILD_ID}")
+                /* Push the container to the custom Registry */
+                customImage.push()
+                }
+            }
         }
     },
-    failFast: true
+    failFast: true,
+    stage("Docker Compose Up") {
+        sh label: '', script: 'docker-compose up --build'
+    }    
 }
