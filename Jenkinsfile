@@ -24,6 +24,7 @@ node {
                     ])
     }
 
+    stage("Build Microservices") {
     parallel configServer: {
         dir('config-server') {
             sh "pwd"
@@ -190,7 +191,9 @@ node {
             }
         }
     },
-    failFast: true,
+    failFast: true
+    },
+
     stage("Docker Compose Up") {
         sh label: '', script: 'docker-compose up --build'
     }    
