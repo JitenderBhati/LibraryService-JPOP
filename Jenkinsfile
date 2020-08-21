@@ -45,7 +45,7 @@ node {
             }
 
             stage('build and push docker image') {
-                docker.withRegistry('https://index.docker.io/v1/', 'docker') {
+                docker.withRegistry('https://index.docker.io/v1/', '962701ce-6f98-4d63-a5ec-153d48b07431') {
                 def customImage = docker.build("jkrajput24/jpop-configServer:v-${env.BUILD_ID}")
                 /* Push the container to the custom Registry */
                 customImage.push()
@@ -68,7 +68,7 @@ node {
             }
 
             stage('build and push docker image') {
-                docker.withRegistry('https://index.docker.io/v1/', 'docker') {
+                docker.withRegistry('https://index.docker.io/v1/', '962701ce-6f98-4d63-a5ec-153d48b07431') {
                 def customImage = docker.build("jkrajput24/jpop-eurekaServer:v-${env.BUILD_ID}")
                 /* Push the container to the custom Registry */
                 customImage.push()
@@ -91,7 +91,7 @@ node {
             }
 
             stage('build and push docker image') {
-                docker.withRegistry('https://index.docker.io/v1/', 'docker') {
+                docker.withRegistry('https://index.docker.io/v1/', '962701ce-6f98-4d63-a5ec-153d48b07431') {
                 def customImage = docker.build("jkrajput24/jpop-authServer:v-${env.BUILD_ID}")
                 /* Push the container to the custom Registry */
                 customImage.push()
@@ -114,7 +114,7 @@ node {
             }
 
             stage('build and push docker image') {
-                docker.withRegistry('https://index.docker.io/v1/', 'docker') {
+                docker.withRegistry('https://index.docker.io/v1/', '962701ce-6f98-4d63-a5ec-153d48b07431') {
                 def customImage = docker.build("jkrajput24/jpop-apiGateway:v-${env.BUILD_ID}")
                 /* Push the container to the custom Registry */
                 customImage.push()
@@ -137,7 +137,7 @@ node {
             }
 
             stage('build and push docker image') {
-                docker.withRegistry('https://index.docker.io/v1/', 'docker') {
+                docker.withRegistry('https://index.docker.io/v1/', '962701ce-6f98-4d63-a5ec-153d48b07431') {
                 def customImage = docker.build("jkrajput24/jpop-bookService:v-${env.BUILD_ID}")
                 /* Push the container to the custom Registry */
                 customImage.push()
@@ -160,7 +160,7 @@ node {
             }
 
             stage('build and push docker image') {
-                docker.withRegistry('https://index.docker.io/v1/', 'docker') {
+                docker.withRegistry('https://index.docker.io/v1/', '962701ce-6f98-4d63-a5ec-153d48b07431') {
                 def customImage = docker.build("jkrajput24/jpop-libraryService:v-${env.BUILD_ID}")
                 /* Push the container to the custom Registry */
                 customImage.push()
@@ -183,7 +183,7 @@ node {
             }
 
             stage('build and push docker image') {
-                docker.withRegistry('https://index.docker.io/v1/', 'docker') {
+                docker.withRegistry('https://index.docker.io/v1/', '962701ce-6f98-4d63-a5ec-153d48b07431') {
                 def customImage = docker.build("jkrajput24/jpop-userService:v-${env.BUILD_ID}")
                 /* Push the container to the custom Registry */
                 customImage.push()
@@ -196,5 +196,12 @@ node {
 
     stage("Docker Compose Up") {
         sh label: '', script: 'docker-compose up --build'
+    }
+
+    stage("Email Trigger") {
+        emailext body: 'Hello Jenkins', 
+        recipientProviders: [developers()], 
+        subject: 'Testing Jenkins', 
+        to: 'Jitender_Bhati@epam.com, jkrajput24@gmail.com'
     }    
 }
