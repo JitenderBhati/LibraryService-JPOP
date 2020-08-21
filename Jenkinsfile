@@ -46,7 +46,7 @@ node {
 
             stage('build and push docker image') {
                 docker.withRegistry('https://index.docker.io/v1/', '962701ce-6f98-4d63-a5ec-153d48b07431') {
-                def customImage = docker.build("jkrajput24/jpop-configServer:v-${env.BUILD_ID}")
+                def customImage = docker.build("jkrajput24/jpop_config_server:v-${env.BUILD_ID}")
                 /* Push the container to the custom Registry */
                 customImage.push()
                 }
@@ -69,7 +69,7 @@ node {
 
             stage('build and push docker image') {
                 docker.withRegistry('https://index.docker.io/v1/', '962701ce-6f98-4d63-a5ec-153d48b07431') {
-                def customImage = docker.build("jkrajput24/jpop-eurekaServer:v-${env.BUILD_ID}")
+                def customImage = docker.build("jkrajput24/jpop_eureka_server:v-${env.BUILD_ID}")
                 /* Push the container to the custom Registry */
                 customImage.push()
                 }
@@ -92,7 +92,7 @@ node {
 
             stage('build and push docker image') {
                 docker.withRegistry('https://index.docker.io/v1/', '962701ce-6f98-4d63-a5ec-153d48b07431') {
-                def customImage = docker.build("jkrajput24/jpop-authServer:v-${env.BUILD_ID}")
+                def customImage = docker.build("jkrajput24/jpop_auth_server:v-${env.BUILD_ID}")
                 /* Push the container to the custom Registry */
                 customImage.push()
                 }
@@ -115,7 +115,7 @@ node {
 
             stage('build and push docker image') {
                 docker.withRegistry('https://index.docker.io/v1/', '962701ce-6f98-4d63-a5ec-153d48b07431') {
-                def customImage = docker.build("jkrajput24/jpop-apiGateway:v-${env.BUILD_ID}")
+                def customImage = docker.build("jkrajput24/jpop_api_gateway:v-${env.BUILD_ID}")
                 /* Push the container to the custom Registry */
                 customImage.push()
                 }
@@ -138,7 +138,7 @@ node {
 
             stage('build and push docker image') {
                 docker.withRegistry('https://index.docker.io/v1/', '962701ce-6f98-4d63-a5ec-153d48b07431') {
-                def customImage = docker.build("jkrajput24/jpop-bookService:v-${env.BUILD_ID}")
+                def customImage = docker.build("jkrajput24/jpop_book_service:v-${env.BUILD_ID}")
                 /* Push the container to the custom Registry */
                 customImage.push()
                 }
@@ -161,7 +161,7 @@ node {
 
             stage('build and push docker image') {
                 docker.withRegistry('https://index.docker.io/v1/', '962701ce-6f98-4d63-a5ec-153d48b07431') {
-                def customImage = docker.build("jkrajput24/jpop-libraryService:v-${env.BUILD_ID}")
+                def customImage = docker.build("jkrajput24/jpop_library_service:v-${env.BUILD_ID}")
                 /* Push the container to the custom Registry */
                 customImage.push()
                 }
@@ -184,7 +184,7 @@ node {
 
             stage('build and push docker image') {
                 docker.withRegistry('https://index.docker.io/v1/', '962701ce-6f98-4d63-a5ec-153d48b07431') {
-                def customImage = docker.build("jkrajput24/jpop-userService:v-${env.BUILD_ID}")
+                def customImage = docker.build("jkrajput24/jpop_user_service:v-${env.BUILD_ID}")
                 /* Push the container to the custom Registry */
                 customImage.push()
                 }
