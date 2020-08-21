@@ -1,5 +1,6 @@
 package com.epam.libraryservice.api;
 
+import com.epam.libraryservice.pojo.Library;
 import com.epam.libraryservice.pojo.LibraryInfo;
 import com.epam.libraryservice.pojo.UserInfo;
 import com.epam.libraryservice.provider.TokenProvider;
@@ -36,7 +37,7 @@ public class LibraryUsersController {
 
     @GetMapping("{user_id}")
     public ResponseEntity<List<LibraryInfo>> getUser(@PathVariable(value = "user_id") final int user_id) {
-        var libraryData = this.libraryService.getUserBooks(user_id);
+        List<Library> libraryData = this.libraryService.getUserBooks(user_id);
         List<LibraryInfo> allLibraryInfo = new ArrayList<>();
         libraryData.forEach(lib -> {
             libraryInfo.setUserInfo(userServiceProxy.getUser(TokenProvider.getAccessToken(), lib.getUser()));

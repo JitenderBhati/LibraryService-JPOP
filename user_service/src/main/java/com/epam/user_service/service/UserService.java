@@ -12,6 +12,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class UserService {
@@ -28,14 +29,14 @@ public class UserService {
     }
 
     public List<UserDto> getAllUsers() {
-        var allUsers = this.userDataAccessService.findAll();
+        List<User> allUsers = this.userDataAccessService.findAll();
         List<UserDto> userDtoList = new ArrayList<>();
         allUsers.forEach(user -> userDtoList.add(this.mapper.map(user, UserDto.class)));
         return userDtoList;
     }
 
     public UserDto getUser(final Long id) throws IllegalAccessException {
-        var userData = this.userDataAccessService.findById(id);
+        Optional<User> userData = this.userDataAccessService.findById(id);
         if(userData.isPresent()) {
             return this.mapper.map(userData.get(), UserDto.class);
         }
@@ -43,7 +44,7 @@ public class UserService {
     }
 
     public UserDto updateUser(final Long id, final UserDto user) {
-        var fetchedUser = this.userDataAccessService.getOne(id);
+        User fetchedUser = this.userDataAccessService.getOne(id);
         this.mapper.map(user, fetchedUser);
         return this.mapper.map(this.userDataAccessService.save(fetchedUser), UserDto.class);
     }
@@ -51,7 +52,7 @@ public class UserService {
     public UserDto addUser(final UserDto user) {
         User mappedUser = this.mapper.map(user, User.class);
         log.error("Mapped User After Mapping: {}", mappedUser);
-        var savedUser = this.userDataAccessService.save(mappedUser);
+        User savedUser = this.userDataAccessService.save(mappedUser);
         log.error("Saved User After Saving: {}", savedUser);
         return this.mapper.map(savedUser, UserDto.class);
     }

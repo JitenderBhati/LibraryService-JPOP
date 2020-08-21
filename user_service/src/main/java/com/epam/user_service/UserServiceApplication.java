@@ -24,7 +24,7 @@ public class UserServiceApplication {
     @Bean
     public ModelMapper getModelMapper() {
 
-        var modelMapper = new ModelMapper();
+        ModelMapper modelMapper = new ModelMapper();
         modelMapper.addMappings(new PropertyMap<AddressDto, Address>() {
             @Override
             protected void configure() {
