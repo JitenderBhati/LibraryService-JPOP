@@ -6,9 +6,10 @@ node {
     
     sh 'java -version'
 
-    stage("Docker Compose Down") {
-        sh label: '', script: 'docker-compose down'
-    }
+    // stage("Docker Compose Down") {
+
+    //     sh label: '', script: 'docker-compose down'
+    // }
 
     stage("Clean Workspace") {
         cleanWs()
