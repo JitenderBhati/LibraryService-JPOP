@@ -1,6 +1,10 @@
 node {
     def githubUrl = "https://github.com/JitenderBhati/LibraryService-JPOP.git"
-
+    jdk = tool name: 'JDK9'
+    env.JAVA_HOME = "${jdk}"
+    echo "jdk installation path is: ${jdk}"
+    sh "${jdk}/bin/java -version"
+    
     stage("clean workplace") {
         cleanWs()
     }
