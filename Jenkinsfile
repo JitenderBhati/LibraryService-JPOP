@@ -51,6 +51,81 @@ node {
                 sh label: '', script: 'mvn install -DskipTests'
             }
         }
+    }, authServer: {
+         dir('authserver') {
+            sh "pwd"
+            stage("Compile") {
+                sh label: '', script: 'mvn clean'
+            }
+
+            stage("Test") {
+                sh label: '', script: 'mvn test'
+            }
+
+            stage('Build Artifact Stage') {
+                sh label: '', script: 'mvn install -DskipTests'
+            }
+        }
+    }, apiGateway: {
+         dir('apigateway') {
+            sh "pwd"
+            stage("Compile") {
+                sh label: '', script: 'mvn clean'
+            }
+
+            stage("Test") {
+                sh label: '', script: 'mvn test'
+            }
+
+            stage('Build Artifact Stage') {
+                sh label: '', script: 'mvn install -DskipTests'
+            }
+        }
+    }, bookService: {
+         dir('Book Service') {
+            sh "pwd"
+            stage("Compile") {
+                sh label: '', script: 'mvn clean'
+            }
+
+            stage("Test") {
+                sh label: '', script: 'mvn test'
+            }
+
+            stage('Build Artifact Stage') {
+                sh label: '', script: 'mvn install -DskipTests'
+            }
+        }
+    }, libraryService: {
+         dir('library-service') {
+            sh "pwd"
+            stage("Compile") {
+                sh label: '', script: 'mvn clean'
+            }
+
+            stage("Test") {
+                sh label: '', script: 'mvn test'
+            }
+
+            stage('Build Artifact Stage') {
+                sh label: '', script: 'mvn install -DskipTests'
+            }
+        }
+    }, userService: {
+         dir('user_service') {
+            sh "pwd"
+            stage("Compile") {
+                sh label: '', script: 'mvn clean'
+            }
+
+            stage("Test") {
+                sh label: '', script: 'mvn test'
+            }
+
+            stage('Build Artifact Stage') {
+                sh label: '', script: 'mvn install -DskipTests'
+            }
+        }
     },
     failFast: true
 }
