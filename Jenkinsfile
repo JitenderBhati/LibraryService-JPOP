@@ -15,7 +15,7 @@ node {
                     ])
     }
 
-    parallel config-server: {
+    parallel configServer: {
         dir('/config-server') {
             stage("Compile") {
                 sh label: '', script: 'mvn clean'
@@ -30,7 +30,7 @@ node {
             }
         }
         
-    }, eureka-server: {
+    }, eurekaServer: {
          dir('/eurekaserver') {
             stage("Compile") {
                 sh label: '', script: 'mvn clean'
