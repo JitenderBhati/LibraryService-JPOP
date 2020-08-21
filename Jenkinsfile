@@ -192,7 +192,7 @@ node {
         }
     },
     failFast: true
-    },
+    }
 
     stage("Docker Compose Up") {
         sh label: '', script: 'docker-compose up --build'
