@@ -29,7 +29,7 @@ public class BookController {
     @PreAuthorize("hasRole('ROLE_admin')")
     public ResponseEntity<List<Book>> getAllBooks() {
         log.info("Invoked /api/v1/books endpoint");
-        var listOfBooks = this.bookService.getBooks();
+        List<Book> listOfBooks = this.bookService.getBooks();
         return ResponseEntity
                 .status(listOfBooks.isEmpty() ? HttpStatus.NO_CONTENT : HttpStatus.OK)
                 .body(listOfBooks);

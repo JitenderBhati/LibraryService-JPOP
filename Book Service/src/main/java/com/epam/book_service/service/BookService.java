@@ -28,7 +28,7 @@ public class BookService {
     }
 
     public void addBook(final BookDto book) {
-        var returnValue = this.bookDataService.save(this.modelMapper.map(book, Book.class));
+        Book returnValue = this.bookDataService.save(this.modelMapper.map(book, Book.class));
         logger.info("Return Value after adding book: {}", returnValue);
     }
 
@@ -45,7 +45,7 @@ public class BookService {
     }
 
     public Book updateBook(final Long id, final BookDto book) {
-        var bookToUpdate = this.bookDataService.getOne(id);
+        Book bookToUpdate = this.bookDataService.getOne(id);
         this.modelMapper.map(book, bookToUpdate);
         return this.bookDataService.save(bookToUpdate);
     }
