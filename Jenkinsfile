@@ -21,7 +21,7 @@ node {
     }
 
     parallel configServer: {
-        dir('/config-server') {
+        sh label: '', script: 'cd config-server'
             stage("Compile") {
                 sh label: '', script: 'mvn clean'
             }
@@ -33,10 +33,9 @@ node {
             stage('Build Artifact Stage') {
                 sh label: '', script: 'mvn install -DskipTests'
             }
-        }
         
     }, eurekaServer: {
-         dir('/eurekaserver') {
+        sh label: '', script: 'cd eurekaserver'
             stage("Compile") {
                 sh label: '', script: 'mvn clean'
             }
@@ -48,7 +47,6 @@ node {
             stage('Build Artifact Stage') {
                 sh label: '', script: 'mvn install -DskipTests'
             }
-        }
     },
     failFast: true
 }
