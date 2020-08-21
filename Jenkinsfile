@@ -40,10 +40,6 @@ node {
                 sh label: '', script: 'mvn install -DskipTests'
             }
 
-            stage("Copy Artiface to Deployment Location") {
-                //sh 'cp -r target/* docker'
-            }
-
             stage('build and push docker image') {
                 docker.withRegistry('https://index.docker.io/v1/', '962701ce-6f98-4d63-a5ec-153d48b07431') {
                 def customImage = docker.build("jkrajput24/jpop_config_server:v-${env.BUILD_ID}")
@@ -161,7 +157,7 @@ node {
 
             stage('build and push docker image') {
                 docker.withRegistry('https://index.docker.io/v1/', '962701ce-6f98-4d63-a5ec-153d48b07431') {
-                def customImage = docker.build("jkrajput24/jpop_library_service:v-${env.BUILD_ID}")
+                def customImage = docker.build("jkrajput24/jpop_library_service:v${env.BUILD_ID}")
                 /* Push the container to the custom Registry */
                 customImage.push()
                 }
@@ -195,13 +191,14 @@ node {
     }
 
     stage("Docker Compose Up") {
-        sh label: '', script: 'docker-compose up --build'
+        sh label: '', script: 'docker-compose up -d'
     }
 
     stage("Email Trigger") {
-        emailext body: 'Hello Jenkins', 
-        recipientProviders: [developers()], 
-        subject: 'Testing Jenkins', 
+        emailext body: "<!DOCTYPE html><html><head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><style>table {margin: 0 auto;width: 90%;font-size: 20px;font-family: sans-serif;border-spacing: 5px;}table tr td:nth-child(odd) {font-weight: bold;}table tr td:nth-child(even) {text-align: right;}th,td {border-bottom: 1px solid #ddd;padding: 10px 15px;}th {background-color: rgb(118, 205, 216);color: white;padding: 10px;}</style></head><body><table><tr><th colspan=\"2\">Project - Library Service Portal | Status Report</th></tr><tr><td>Status</td><td>${currentBuild.currentResult}</td></tr><tr><td>JOB</td><td> ${env.JOB_NAME}</td></tr><tr><td>Date</td><td>${BUILD_TIMESTAMP}</td></tr><tr><td>Duration</td><td>${currentBuild.durationString}</td></tr><tr><td>Cause</td><td>started by admin</td></tr></table></body></html>",
+        attachLog: true,
+        subject: "JPOP Library Service Portal -Build #${BUILD_NUMBER} - ${currentBuild.currentResult}",                                                           
+        mimeType: 'text/html',
         to: 'Jitender_Bhati@epam.com, jkrajput24@gmail.com'
     }    
 }
