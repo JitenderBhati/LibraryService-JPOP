@@ -21,7 +21,8 @@ node {
     }
 
     parallel configServer: {
-        dir('${env.WORKSPACE}/config-server') {
+        dir('config-server') {
+            sh "pwd"
             stage("Compile") {
                 sh label: '', script: 'mvn clean'
             }
@@ -36,7 +37,8 @@ node {
         }
         
     }, eurekaServer: {
-         dir('${env.WORKSPACE}/eurekaserver') {
+         dir('eurekaserver') {
+             sh "pwd"
             stage("Compile") {
                 sh label: '', script: 'mvn clean'
             }
