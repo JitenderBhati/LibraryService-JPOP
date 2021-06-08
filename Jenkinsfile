@@ -16,7 +16,7 @@ pipeline {
     {
       steps{
         dir('user_service'){
-          sh "mvn clean install"
+          bat "mvn clean install"
         }
         
       }
@@ -24,7 +24,7 @@ pipeline {
     stage('Mule Test')
     {
       steps{
-        sh "echo run muint test"
+        bat "echo run muint test"
 
       }
     }
@@ -33,7 +33,7 @@ pipeline {
       steps{
         dir('user_service'){
         withSonarQubeEnv('Sonar-Qube'){
-          sh "mvn sonar:sonar"
+          bat "mvn sonar:sonar"
         }
         }
       }
