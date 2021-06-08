@@ -16,6 +16,7 @@ pipeline {
     {
       steps{
         sh "cd user_service"
+        sh "dir"
         sh "mvn clean install"
       }
     }
