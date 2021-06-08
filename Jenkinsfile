@@ -3,12 +3,17 @@
 
 pipeline {
   agent any
+  tools{
+    jdk 'jdk-9'
+  }
  
   stages {
 
     stage('Code Checkout')
     {
       steps{
+        bat 'echo "PATH=${PATH}"'
+        bat 'echo "M2_HOME=${M2_HOME}"'
         checkout([$class: 'GitSCM', branches: [[name: '*/develop']], extensions: [], userRemoteConfigs: [[credentialsId: 'git-local', url: 'https://github.com/JitenderBhati/LibraryService-JPOP.git']]])
       }
     }
