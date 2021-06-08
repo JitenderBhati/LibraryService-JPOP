@@ -12,6 +12,29 @@ pipeline {
         checkout([$class: 'GitSCM', branches: [[name: '*/develop']], extensions: [], userRemoteConfigs: [[credentialsId: 'git-local', url: 'https://github.com/JitenderBhati/LibraryService-JPOP.git']]])
       }
     }
+    stage('Build')
+    {
+      steps{
+        sh "cd user_service"
+        sh "mvn clean install"
+      }
+    }
+    stage('Mule Test')
+    {
+      steps{
+        sh "echo run muint test"
+
+      }
+    }
+    stage('Sonar analysis')
+    {
+      steps{
+        withSonarQubeEnv(){
+          sh "mvn sonar:sonar"
+          
+        }
+      }
+    }
     
 //     stage('Deploy Application') { 
 	
