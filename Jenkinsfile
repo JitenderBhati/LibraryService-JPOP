@@ -15,9 +15,10 @@ pipeline {
     stage('Build')
     {
       steps{
-        sh "cd user_service"
-        sh "dir"
-        sh "mvn clean install"
+        dir('user_service'){
+          sh "mvn clean install"
+        }
+        
       }
     }
     stage('Mule Test')
@@ -30,9 +31,10 @@ pipeline {
     stage('Sonar analysis')
     {
       steps{
+        dir('user_service'){
         withSonarQubeEnv('Sonar-Qube'){
           sh "mvn sonar:sonar"
-
+        }
         }
       }
     }
